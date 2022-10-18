@@ -1,0 +1,59 @@
+.footer{
+  &-top{
+    background: #152136;
+  }
+  &-bottom{
+    background:$t-black;
+    padding: 34px 0px;
+  }
+
+  &-nav{
+    color: $t-white;
+    &-title{
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &-item{
+      font-size: 12px;
+      line-height: 150%;
+      margin-bottom: 12px;
+    }
+    &-social{
+      margin-right: 16px;
+    }
+  }
+  &-terms{
+    &-wrap{
+      font-size: 14px;
+      line-height: 150%;
+      padding: 0px 16px;
+      color: $t-white;
+
+      &.wrap-border{
+        border-left: 1px solid #bebebe;
+        border-right: 1px solid #bebebe;
+      }
+    }
+  }
+}
+.mobile-footer{
+  background: #152136;
+
+  &-nav{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff ;
+
+    .footer-dropdown{
+      font-size: 16px;
+      line-height: 150%;
+      display: block;
+      color: white;
+      padding: 12px 0;
+      width: 100%;
+    }
+  }
+
+  
+
+  
+}

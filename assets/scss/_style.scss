@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+.header{
+  
+  &-2xl{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  &-xl{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &-l{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &-m{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &-s{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &-xs{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &-2xs{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}
+
+p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500px;
+  line-height: 150%;
+
+  &.small{
+    font-size: 14px;
+    font-weight: 500px;
+  }
+}
+
+.text{
+  &-m{
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 150%;
+
+    &.bold{
+      font-weight: 700;
+    }
+  }
+  &-s{
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 150%;
+
+    &.bold{
+      font-weight: 700;
+    }
+  }
+  &-xs{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  &-2xs{
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 150%;
+  }
+
+  &-red{
+    color: $t-red;
+  }
+}
+
+.btn{
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  // width: 100%;
+  padding: 12px 32px;
+  border-radius: 12px;
+  color: $t-white;
+
+  &-blue{
+    background-color: $t-blue;
+  }
+
+  &-blueinv{
+    background-color: $t-white;
+    border: 1px solid $t-blue;
+    color: $t-blue;
+  }
+}
+
+.label{
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+
+  &-orange{
+    background:#FCEEDA;
+    color: #ED7950;
+    width: 90px;
+    &.part-paid{
+      width: 89px;
+      text-align: center;
+      svg{
+        display: none;
+      }
+    }
+  }
+  &-green{
+    background: #E8F3DC;
+    color: #56C161;
+    width: 54px;
+    &.paid{
+      width: 41px;
+      text-align: center;
+      svg{
+        display: none;
+      }
+    }
+  }
+  &-grey{
+    background: #EAEAEA;
+    color: #1F1F1F;
+    width: 69px;
+    &.unpaid{
+      width: 57px;
+      text-align: center;
+      svg{
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+
+//research how shuet ee does button btn
+
+//does labels have set fixed with ? seems like the width is diff across

@@ -5,6 +5,10 @@
   .nav-link{
     color: $t-black !important;
 
+    &:hover{
+      color: $t-blue!important;
+    }
+
   }
   .nav-item{
     margin-right:40px;

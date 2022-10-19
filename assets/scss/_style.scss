@@ -26,6 +26,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 a{
   text-decoration: none;
   color: inherit;
+  pointer-events: none;
 }
 
 body{

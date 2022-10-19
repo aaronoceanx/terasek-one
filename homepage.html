@@ -13,14 +13,13 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid px-lg-5 px-3">
+  <nav class="navbar navbar-expand-lg navbar-light pt-3">
+    <div class="container">
       <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
-      <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        <span class="my-1 mx-2 close"><img src="./assets/images/close.png" alt=""></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-lg-flex d-none">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-m" href="#">Home</a>
@@ -42,8 +41,38 @@
           </li>
         </ul>
         <a href="" class="btn btn-blue">Register</a>
-        
       </div>
+
+      <div class="collapse navbar-collapse" id="navbar_mobile">
+        <div class=" container pt-3">
+          <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="my-1 mx-2 close"><img src="./assets/images/close.png" alt=""></span>
+          </button>
+          </div>
+          <ul class="navbar-nav my-5 ps-3">
+            <li class="nav-item">
+              <a href="" class="mobile-nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="mobile-nav-link">Our Offerings</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="mobile-nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="mobile-nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="mobile-nav-link">Refer & Earn</a>
+            </li>
+          </ul>
+          <div class="ps-3">
+            <a href="" class="btn btn-blue">Register</a>
+          </div>
+        </div>
+        </div>
     </div>
   </nav>
 
@@ -56,39 +85,20 @@
               <span class="footer-nav-title">Sitemap Title</span>
               <ul class="nav flex-column mt-3">
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
+                </li>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
-                </li>
-              </ul>
-            </div>
-            <div class="col footer-nav">
-              <span class="footer-nav-title">Sitemap Title</span>
-              <ul class="nav flex-column mt-3">
-                <li class="footer-nav-item">
-                  Sitemap Item
-                </li>
-                <li class="footer-nav-item">
-                  Sitemap Item
-                </li>
-                <li class="footer-nav-item">
-                  Sitemap Item
-                </li>
-                <li class="footer-nav-item">
-                  Sitemap Item
-                </li>
-                <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
               </ul>
             </div>
@@ -96,19 +106,41 @@
               <span class="footer-nav-title">Sitemap Title</span>
               <ul class="nav flex-column mt-3">
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
+                </li>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
                 </li>
                 <li class="footer-nav-item">
-                  Sitemap Item
+                  <a href="">Sitemap Item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col footer-nav">
+              <span class="footer-nav-title">Sitemap Title</span>
+              <ul class="nav flex-column mt-3">
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
                 </li>
               </ul>
             </div>
@@ -208,13 +240,12 @@
   </footer>
   
   
-  <!-- <a href="" class="btn btn-blue">Register</a>
+  <div class="ps-5">
+    <a href="" class="btn btn-blue">Register</a>
   <div class="label label-orange">
     Upcoming
-    <a href=""><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.5 2.5H5.5V3.5H4.5V2.5ZM4.5 4.5H5.5V7.5H4.5V4.5ZM5 0C2.24 0 0 2.24 0 5C0 7.76 2.24 10 5 10C7.76 10 10 7.76 10 5C10 2.24 7.76 0 5 0ZM5 9C2.795 9 1 7.205 1 5C1 2.795 2.795 1 5 1C7.205 1 9 2.795 9 5C9 7.205 7.205 9 5 9Z" fill="black"/>
-    </svg></a>
-  </div> -->
+  </div> 
+  </div>
 
  
 

@@ -133,12 +133,23 @@ p{
 
   &-blue{
     background-color: $t-blue;
-  }
 
+    &:hover{
+      background-color: $t-white;
+      border: 1px solid $t-blue;
+      color: $t-blue;
+    }
+  }
   &-blueinv{
     background-color: $t-white;
     border: 1px solid $t-blue;
     color: $t-blue;
+    
+
+    &:hover{
+      background-color: $t-blue;
+      color: $t-white;
+    }
   }
 }
 
@@ -152,44 +163,27 @@ p{
   &-orange{
     background:#FCEEDA;
     color: #ED7950;
-    width: 90px;
+    width: 74px;
     &.part-paid{
-      width: 89px;
+      width: 91px;
       text-align: center;
-      svg{
-        display: none;
-      }
     }
   }
   &-green{
     background: #E8F3DC;
     color: #56C161;
-    width: 54px;
-    &.paid{
-      width: 41px;
-      text-align: center;
-      svg{
-        display: none;
-      }
-    }
+    width: 39px;
   }
   &-grey{
     background: #EAEAEA;
     color: #1F1F1F;
-    width: 69px;
-    &.unpaid{
-      width: 57px;
-      text-align: center;
-      svg{
-        display: none;
-      }
-    }
-
+    width: 54px;
   }
 }
 
+.dropdown-menu-start[data-bs-popper] {
+  right: auto;
+  left: -90px;
+  top: 57px;
+}
 
-
-//research how shuet ee does button btn
-
-//does labels have set fixed with ? seems like the width is diff across

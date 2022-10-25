@@ -29,6 +29,7 @@ a {
 
 body {
   font-family: "Quicksand", sans-serif;
+  background: #F7F7F7;
 }
 
 /* remember to define focus styles! */
@@ -521,6 +522,23 @@ form .form-control {
   .home-about-content {
     padding: 0 10px;
   }
+}
+.home-offering .product-list-carousel {
+  margin-bottom: 50px;
+}
+.home-offering .product-list-carousel .carousel-indicators {
+  margin-bottom: -3rem;
+}
+.home-offering .product-list-carousel .carousel-indicators [data-bs-target] {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #dedede;
+}
+.home-offering .product-list-carousel-img {
+  height: 120px;
+  width: 100%;
+  object-fit: contain;
 }
 .home-contact {
   padding: 80px 0 160px 0;

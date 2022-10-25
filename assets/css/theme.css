@@ -140,6 +140,21 @@ p.small {
   color: #FF4316;
 }
 
+.btn-filter {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  color: #000000;
+  min-width: 160px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
 .btn {
   font-size: 16px;
   font-weight: 500;
@@ -290,6 +305,11 @@ form .form-control {
 }
 .company-card-button[aria-expanded=false] .collapse-span {
   display: none;
+}
+
+.hero-header {
+  background: #F9EBE8;
+  padding: 100px 0;
 }
 
 .navbar {
@@ -509,4 +529,13 @@ form .form-control {
   .home-contact {
     padding: 40px 0 80px 0;
   }
+}
+
+.product-list {
+  padding-bottom: 240px;
+}
+.product-list-filter {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=theme.css.map */

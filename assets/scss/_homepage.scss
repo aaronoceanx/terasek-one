@@ -1,11 +1,14 @@
 .home{
     &-hero{
         padding: 110px 0px 80px 0px;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0px 80px 0px;
+        }
     }
 
     &-refer{
         padding: 85px 0px 80px 0;
-
         &-content{
             padding-right: 150px;
 
@@ -17,7 +20,6 @@
                 padding-right: 50px;
             }
         }
-
         .dot{
             &-line{
                 position: absolute;
@@ -33,7 +35,6 @@
                 @media screen and (max-width: 1199px){
                     left: 3px;
                 }
-
             }
             &-line-inner{
                 border-left: 3px solid $t-blue;
@@ -82,20 +83,20 @@
 
     &-about{
         padding: 80px 0;
-        &-image{
-            // height:507px ;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0;
         }
+        
         &-content{
             padding:0 140px;
 
             @media screen and (max-width: 1199px){
                 padding: 0 70px;
             }
-
             @media screen and (max-width: 991px){
                 padding: 0;
             }
-
             @media screen and (max-width: 575px){
                 padding:0 10px;
             }
@@ -104,5 +105,9 @@
 
     &-contact{
         padding: 80px 0 160px 0;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0 80px 0;
+        }
     }
 }

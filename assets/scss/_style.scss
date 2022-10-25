@@ -42,11 +42,25 @@ body{
     font-size: 80px;
     font-weight: 700;
     line-height: 130%;
+
+    //Header-xl for mobile
+    @media screen and (max-width: 575px){
+      font-size: 64px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-xl{
     font-size: 64px;
     font-weight: 500;
     line-height: 130%;
+
+    //Header-l for mobile
+    @media screen and (max-width: 575px){
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-l{
     font-size: 40px;
@@ -62,6 +76,14 @@ body{
     font-size: 24px;
     font-weight: 500;
     line-height: 130%;
+
+    //Header-xs for mobile
+    @media screen and (max-width: 575px){
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+  
   }
   &-xs{
     font-size: 18px;
@@ -80,6 +102,12 @@ p{
   line-height: 22px;
   font-weight: 500px;
   line-height: 150%;
+
+  //p-small for mobile
+  @media screen and (max-width: 575px){
+    font-size: 14px;
+    font-weight: 500px;
+  }
 
   &.small{
     font-size: 14px;
@@ -139,6 +167,14 @@ p{
       border: 1px solid $t-blue;
       color: $t-blue;
     }
+
+    &.mobile-w-100{
+
+      @media screen and (max-width: 991px){
+        width: 100%;
+      }
+      
+    }
   }
   &-blueinv{
     background-color: $t-white;
@@ -151,6 +187,10 @@ p{
       color: $t-white;
     }
   }
+  &.disabled{
+    background-color: #EAEAEA;
+    border: none;
+  }
 }
 
 .label{
@@ -159,7 +199,7 @@ p{
   font-size: 12px;
   font-weight: 500;
   line-height: 150%;
-
+  display: inline;
   &-orange{
     background:#FCEEDA;
     color: #ED7950;
@@ -185,5 +225,108 @@ p{
   right: auto;
   left: -90px;
   top: 57px;
+}
+
+.image-100{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-radius{
+  border-radius: 16px;
+}
+
+form{
+
+  .form-label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: $t-black;
+  }
+
+  .form-control{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 12px 0px 12px 16px;
+  }
+}
+
+.company-card{
+  padding: 21px 18px;
+  background-color: $t-white;
+  border: 1px solid #dedede;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+
+  &-desc{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-collapse{
+    h5{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 8px;
+    }
+    p{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 24px;
+    }
+    a{
+      text-decoration: underline;
+      display: block;
+    }
+
+    
+  }
+
+  &-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+      text-decoration: underline;
+
+      svg path{
+        fill: blue;
+      }
+    }
+
+    &[aria-expanded="true"]{
+      .view{
+        display: none;
+      }
+      .collapse-span{
+        display: inline;
+      }
+
+      svg{
+        transform: rotate(180deg);
+      }
+    }
+    &[aria-expanded="false"]{
+      .view{
+        display: inline;
+      }
+      .collapse-span{
+        display: none;
+      }
+    }
+  }
+
 }
 

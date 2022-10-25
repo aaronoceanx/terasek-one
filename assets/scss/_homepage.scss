@@ -1,0 +1,113 @@
+.home{
+    &-hero{
+        padding: 110px 0px 80px 0px;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0px 80px 0px;
+        }
+    }
+
+    &-refer{
+        padding: 85px 0px 80px 0;
+        &-content{
+            padding-right: 150px;
+
+            @media screen and (max-width: 1399px){
+                padding-right: 100px;
+            }
+
+            @media screen and (max-width: 1199px){
+                padding-right: 50px;
+            }
+        }
+        .dot{
+            &-line{
+                position: absolute;
+                width: 5%;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left:-1px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media screen and (max-width: 1199px){
+                    left: 3px;
+                }
+            }
+            &-line-inner{
+                border-left: 3px solid $t-blue;
+                height: 26%;
+                margin-top: 33px;
+            }
+            &-line-inner-alt{
+                border-left: 3px solid $t-blue;
+                height: 27%;
+                margin-top: 50px;
+                @media screen and (max-width: 1399px){
+                   margin-top:38px ;
+                }
+                @media screen and (max-width: 1199px){
+                    margin-top: 37px;
+                }
+            }
+        }
+
+        .carousel-height{
+            height: 33.33%;
+        }
+
+        .carousel-indicators{
+            top: 0;
+            bottom: unset;
+            margin-left: 0px;
+            margin-right: 0px;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 71%;
+
+            & .active{
+                background-color: $t-blue;
+            }
+        }
+
+        .carousel-indicators [data-bs-target]{
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: $t-blue solid 2px;
+            opacity: 1;
+        }
+    }
+
+    &-about{
+        padding: 80px 0;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0;
+        }
+        
+        &-content{
+            padding:0 140px;
+
+            @media screen and (max-width: 1199px){
+                padding: 0 70px;
+            }
+            @media screen and (max-width: 991px){
+                padding: 0;
+            }
+            @media screen and (max-width: 575px){
+                padding:0 10px;
+            }
+        }
+    }
+
+    &-contact{
+        padding: 80px 0 160px 0;
+
+        @media screen and (max-width: 575px){
+            padding: 40px 0 80px 0;
+        }
+    }
+}

@@ -137,6 +137,8 @@
     </div>
   </section>
 
+
+  <!--Only for Mobile , can use fullscreen modal as alternatvie-->
   <div id="filterOverlay" class="filter-overlay">
     <div class="filter-overlay-header">
       <div class="container ">
@@ -240,7 +242,8 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </div>
-          <button class="btn-filter dropdown-toggle" type="button" onclick="openNav()">
+          <!--For Mobile Only-->
+          <button class="btn-filter dropdown-toggle d-flex d-lg-none" type="button" onclick="openNav()">
             <div>
               <img src="./assets/images/filter.png" alt="">
               <span>Filter</span>
@@ -567,7 +570,7 @@
     </div>
   </section>
 
-  <div>
+  <div class="py-3">
     <div class="container">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Test EOI interest

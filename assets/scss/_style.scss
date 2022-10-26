@@ -67,11 +67,23 @@ body{
     font-size: 40px;
     font-weight: 500;
     line-height: 130%;
+    //Header-m for mobile
+    @media screen and (max-width: 575px){
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-m{
     font-size: 32px;
     font-weight: 500;
     line-height: 130%;
+    //Header-s for mobile
+    @media screen and (max-width: 575px){
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-s{
     font-size: 24px;

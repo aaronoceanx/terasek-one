@@ -66,10 +66,24 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
+@media screen and (max-width: 575px) {
+  .header-l {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}
 .header-m {
   font-size: 32px;
   font-weight: 500;
   line-height: 130%;
+}
+@media screen and (max-width: 575px) {
+  .header-m {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+  }
 }
 .header-s {
   font-size: 24px;
@@ -631,4 +645,61 @@ form .form-control {
   font-size: 16px;
   line-height: 150%;
   color: #A9A9A9;
+}
+
+.about-wedo {
+  padding: 80px 0px;
+}
+.about-different {
+  padding: 80px 0px;
+}
+.about-custody {
+  padding: 80px 0;
+}
+.about-custody-card {
+  background: #F9EBE8;
+  border-radius: 40px;
+  padding: 65px 85px;
+}
+@media screen and (max-width: 575px) {
+  .about-custody-card {
+    padding: 0;
+  }
+}
+.about-custody-card-title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 130%;
+}
+@media screen and (max-width: 991px) {
+  .about-custody-card-title {
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about-custody-card-image {
+    height: 100px;
+  }
+}
+.about-team {
+  padding: 80px 0 60px 0;
+}
+.about-team-card {
+  padding-right: 36px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  .about-team-card {
+    padding-right: 0px;
+  }
+}
+.about-team-card-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+}
+.about-contact {
+  padding: 80px 0;
 }/*# sourceMappingURL=theme.css.map */

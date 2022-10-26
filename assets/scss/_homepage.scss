@@ -103,6 +103,30 @@
         }
     }
 
+    &-offering{
+        .product-list-carousel{
+            margin-bottom: 50px;
+            .carousel-indicators{
+                
+                margin-bottom: -3rem;
+
+                & [data-bs-target]{
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 100%;
+                    background-color: #dedede;
+                }
+            }
+
+            &-img{
+                height: 120px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+
     &-contact{
         padding: 80px 0 160px 0;
 

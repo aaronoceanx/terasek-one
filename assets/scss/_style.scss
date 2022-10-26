@@ -30,6 +30,7 @@ a{
 
 body{
   font-family: 'Quicksand', sans-serif;
+  background: #F7F7F7;
 }
 /* remember to define focus styles! */
 :focus {
@@ -150,6 +151,21 @@ p{
   }
 }
 
+.btn-filter{
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  color: $t-black;
+  min-width: 160px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
 .btn{
   font-size: 16px;
   font-weight: 500;
@@ -187,6 +203,18 @@ p{
       color: $t-white;
     }
   }
+
+  &-blueplain{
+    background-color: transparent;
+    border:0;
+    color: $t-blue;
+    
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
   &.disabled{
     background-color: #EAEAEA;
     border: none;
@@ -261,6 +289,10 @@ form{
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
 
+  @media screen and (max-width: 991px){
+    margin-bottom: 20px;
+  }
+
   &-desc{
     height: 200px;
     display: flex;
@@ -327,6 +359,9 @@ form{
       }
     }
   }
-
 }
 
+.hero-header{
+  background: #F9EBE8;
+  padding: 100px 0;
+}

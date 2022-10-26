@@ -186,6 +186,14 @@ p.small {
   background-color: #2639F2;
   color: #ffffff;
 }
+.btn-blueplain {
+  background-color: transparent;
+  border: 0;
+  color: #2639F2;
+}
+.btn-blueplain:hover {
+  text-decoration: underline;
+}
 .btn.disabled {
   background-color: #EAEAEA;
   border: none;
@@ -616,4 +624,11 @@ form .form-control {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2639F2;
   --bs-gradient: none;
+}
+
+.eoi-modal .form-select {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #A9A9A9;
 }/*# sourceMappingURL=theme.css.map */

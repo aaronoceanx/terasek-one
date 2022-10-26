@@ -203,6 +203,17 @@ p{
       color: $t-white;
     }
   }
+
+  &-blueplain{
+    background-color: transparent;
+    border:0;
+    color: $t-blue;
+    
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
   
   &.disabled{
     background-color: #EAEAEA;

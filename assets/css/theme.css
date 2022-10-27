@@ -650,8 +650,18 @@ form .form-control {
 .about-wedo {
   padding: 80px 0px;
 }
+@media screen and (max-width: 575px) {
+  .about-wedo {
+    padding: 40px;
+  }
+}
 .about-different {
   padding: 80px 0px;
+}
+@media screen and (max-width: 575px) {
+  .about-different {
+    padding: 40px;
+  }
 }
 .about-custody {
   padding: 80px 0;
@@ -702,6 +712,11 @@ form .form-control {
 }
 .about-contact {
   padding: 80px 0;
+}
+@media screen and (max-width: 575px) {
+  .about-contact {
+    padding: 40px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

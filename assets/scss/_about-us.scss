@@ -1,9 +1,15 @@
 .about{
   &-wedo{
     padding: 80px 0px;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
   }
   &-different{
     padding: 80px 0px;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
   }
 
   &-custody{
@@ -64,5 +70,8 @@
 
   &-contact{
     padding: 80px 0;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
   }
 }

@@ -663,7 +663,7 @@ form .form-control {
 }
 @media screen and (max-width: 575px) {
   .about-custody-card {
-    padding: 0;
+    padding: 40px;
   }
 }
 .about-custody-card-title {
@@ -702,4 +702,6 @@ form .form-control {
 }
 .about-contact {
   padding: 80px 0;
-}/*# sourceMappingURL=theme.css.map */
+}
+
+/*# sourceMappingURL=theme.css.map */

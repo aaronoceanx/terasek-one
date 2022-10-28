@@ -58,7 +58,7 @@
             height: 33.33%;
         }
 
-        .carousel-indicators{
+        .carousel-indicators.refer-desktop{
             top: 0;
             bottom: unset;
             margin-left: 0px;
@@ -72,12 +72,26 @@
             }
         }
 
-        .carousel-indicators [data-bs-target]{
+        .carousel-indicators.refer-desktop [data-bs-target]{
             width: 20px;
             height: 20px;
             border-radius: 100%;
             border: $t-blue solid 2px;
             opacity: 1;
+        }
+
+        .refer-mobile-carousel{
+            .carousel-indicators{
+                
+                margin-bottom: -3rem;
+    
+                & [data-bs-target]{
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 100%;
+                    background-color: #dedede;
+                }
+            }
         }
     }
 
@@ -118,11 +132,11 @@
                 }
             }
 
-            &-img{
-                height: 120px;
-                width: 100%;
-                object-fit: contain;
-            }
+            // &-img{
+            //     height: 120px;
+            //     width: 100%;
+            //     object-fit: contain;
+            // }
         }
 
     }

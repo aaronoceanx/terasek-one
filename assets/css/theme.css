@@ -282,6 +282,13 @@ form .form-control {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 575px) {
+  .company-card img {
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
 .company-card-desc {
   height: 200px;
   display: flex;
@@ -343,6 +350,11 @@ form .form-control {
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #dedede;
+}
+@media screen and (max-width: 575px) {
+  .navbar-brand {
+    width: 120px;
+  }
 }
 .navbar .nav-link {
   color: #000000 !important;
@@ -505,7 +517,7 @@ form .form-control {
 .home-refer .carousel-height {
   height: 33.33%;
 }
-.home-refer .carousel-indicators {
+.home-refer .carousel-indicators.refer-desktop {
   top: 0;
   bottom: unset;
   margin-left: 0px;
@@ -514,15 +526,24 @@ form .form-control {
   justify-content: space-between;
   height: 71%;
 }
-.home-refer .carousel-indicators .active {
+.home-refer .carousel-indicators.refer-desktop .active {
   background-color: #2639F2;
 }
-.home-refer .carousel-indicators [data-bs-target] {
+.home-refer .carousel-indicators.refer-desktop [data-bs-target] {
   width: 20px;
   height: 20px;
   border-radius: 100%;
   border: #2639F2 solid 2px;
   opacity: 1;
+}
+.home-refer .refer-mobile-carousel .carousel-indicators {
+  margin-bottom: -3rem;
+}
+.home-refer .refer-mobile-carousel .carousel-indicators [data-bs-target] {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #dedede;
 }
 .home-about {
   padding: 80px 0;
@@ -562,11 +583,6 @@ form .form-control {
   border-radius: 100%;
   background-color: #dedede;
 }
-.home-offering .product-list-carousel-img {
-  height: 120px;
-  width: 100%;
-  object-fit: contain;
-}
 .home-contact {
   padding: 80px 0 160px 0;
 }
@@ -602,26 +618,6 @@ form .form-control {
   width: 80px;
 }
 
-.filter-overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-.filter-overlay-header {
-  height: 72px;
-  border-width: 1px 0px;
-  border-style: solid;
-  border-color: #DEDEDE;
-}
-.filter-overlay-content {
-  padding-top: 25px;
-}
 .filter-overlay .btn-outline-primary {
   color: #2639F2;
   --bs-btn-color: #2639F2;
@@ -717,6 +713,4 @@ form .form-control {
   .about-contact {
     padding: 40px;
   }
-}
-
-/*# sourceMappingURL=theme.css.map */
+}/*# sourceMappingURL=theme.css.map */

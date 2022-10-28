@@ -2,6 +2,13 @@
   background-color: $t-white;
   border-bottom: 1px solid #dedede;
 
+  &-brand{
+
+    @media screen and (max-width: 575px){
+      width: 120px;
+    }
+  }
+
   .nav-link{
     color: $t-black !important;
 

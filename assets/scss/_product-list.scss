@@ -33,27 +33,6 @@
 }
 
 .filter-overlay{
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: $t-white;
-  overflow-y: hidden;
-  transition: 0.5s;
-
-  &-header{
-    height: 72px;
-    border-width: 1px 0px;
-    border-style: solid;
-    border-color: #DEDEDE;
-
-  }
-  &-content{
-    padding-top: 25px;
-  }
-
   .btn-outline-primary {
     color: #2639F2;
     --bs-btn-color: #2639F2;
@@ -70,7 +49,7 @@
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #2639F2;
     --bs-gradient: none;
-}
+  }
 }
 
 .eoi-modal{

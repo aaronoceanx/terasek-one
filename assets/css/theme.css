@@ -44,7 +44,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .header-2xl {
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 130%;
   }
@@ -66,10 +66,24 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
+@media screen and (max-width: 575px) {
+  .header-l {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+  }
+}
 .header-m {
   font-size: 32px;
   font-weight: 500;
   line-height: 130%;
+}
+@media screen and (max-width: 575px) {
+  .header-m {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+  }
 }
 .header-s {
   font-size: 24px;
@@ -253,7 +267,7 @@ form .form-control {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  padding: 12px 0px 12px 16px;
+  padding: 12px 16px 12px 16px;
 }
 
 .company-card {
@@ -266,6 +280,13 @@ form .form-control {
 @media screen and (max-width: 991px) {
   .company-card {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .company-card img {
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
   }
 }
 .company-card-desc {
@@ -326,9 +347,28 @@ form .form-control {
   padding: 100px 0;
 }
 
+.upload-file {
+  padding: 24px 0px;
+  background: #F5F6FF;
+  border: 1px dashed #A9A9A9;
+  border-radius: 12px;
+  margin: 0px;
+}
+.upload-file-button {
+  height: 100%;
+  background: transparent;
+  border: 1px solid #2639F2;
+  border-radius: 12px;
+}
+
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #dedede;
+}
+@media screen and (max-width: 575px) {
+  .navbar-brand {
+    width: 120px;
+  }
 }
 .navbar .nav-link {
   color: #000000 !important;
@@ -491,7 +531,7 @@ form .form-control {
 .home-refer .carousel-height {
   height: 33.33%;
 }
-.home-refer .carousel-indicators {
+.home-refer .carousel-indicators.refer-desktop {
   top: 0;
   bottom: unset;
   margin-left: 0px;
@@ -500,15 +540,24 @@ form .form-control {
   justify-content: space-between;
   height: 71%;
 }
-.home-refer .carousel-indicators .active {
+.home-refer .carousel-indicators.refer-desktop .active {
   background-color: #2639F2;
 }
-.home-refer .carousel-indicators [data-bs-target] {
+.home-refer .carousel-indicators.refer-desktop [data-bs-target] {
   width: 20px;
   height: 20px;
   border-radius: 100%;
   border: #2639F2 solid 2px;
   opacity: 1;
+}
+.home-refer .refer-mobile-carousel .carousel-indicators {
+  margin-bottom: -3rem;
+}
+.home-refer .refer-mobile-carousel .carousel-indicators [data-bs-target] {
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: #dedede;
 }
 .home-about {
   padding: 80px 0;
@@ -548,11 +597,6 @@ form .form-control {
   border-radius: 100%;
   background-color: #dedede;
 }
-.home-offering .product-list-carousel-img {
-  height: 120px;
-  width: 100%;
-  object-fit: contain;
-}
 .home-contact {
   padding: 80px 0 160px 0;
 }
@@ -588,26 +632,6 @@ form .form-control {
   width: 80px;
 }
 
-.filter-overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-.filter-overlay-header {
-  height: 72px;
-  border-width: 1px 0px;
-  border-style: solid;
-  border-color: #DEDEDE;
-}
-.filter-overlay-content {
-  padding-top: 25px;
-}
 .filter-overlay .btn-outline-primary {
   color: #2639F2;
   --bs-btn-color: #2639F2;
@@ -631,4 +655,76 @@ form .form-control {
   font-size: 16px;
   line-height: 150%;
   color: #A9A9A9;
+}
+
+.about-wedo {
+  padding: 80px 0px;
+}
+@media screen and (max-width: 575px) {
+  .about-wedo {
+    padding: 40px;
+  }
+}
+.about-different {
+  padding: 80px 0px;
+}
+@media screen and (max-width: 575px) {
+  .about-different {
+    padding: 40px;
+  }
+}
+.about-custody {
+  padding: 80px 0;
+}
+.about-custody-card {
+  background: #F9EBE8;
+  border-radius: 40px;
+  padding: 65px 85px;
+}
+@media screen and (max-width: 575px) {
+  .about-custody-card {
+    padding: 40px;
+  }
+}
+.about-custody-card-title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 130%;
+}
+@media screen and (max-width: 991px) {
+  .about-custody-card-title {
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about-custody-card-image {
+    height: 100px;
+  }
+}
+.about-team {
+  padding: 80px 0 60px 0;
+}
+.about-team-card {
+  padding-right: 36px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  .about-team-card {
+    padding-right: 0px;
+  }
+}
+.about-team-card-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+}
+.about-contact {
+  padding: 80px 0;
+}
+@media screen and (max-width: 575px) {
+  .about-contact {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=theme.css.map */

@@ -44,9 +44,9 @@ body{
     font-weight: 700;
     line-height: 130%;
 
-    //Header-xl for mobile
+    //Header-l for mobile
     @media screen and (max-width: 575px){
-      font-size: 64px;
+      font-size: 40px;
       font-weight: 500;
       line-height: 130%;
     }
@@ -67,11 +67,23 @@ body{
     font-size: 40px;
     font-weight: 500;
     line-height: 130%;
+    //Header-m for mobile
+    @media screen and (max-width: 575px){
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-m{
     font-size: 32px;
     font-weight: 500;
     line-height: 130%;
+    //Header-s for mobile
+    @media screen and (max-width: 575px){
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 130%;
+    }
   }
   &-s{
     font-size: 24px;
@@ -278,7 +290,7 @@ form{
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    padding: 12px 0px 12px 16px;
+    padding: 12px 16px 12px 16px;
   }
 }
 
@@ -291,6 +303,16 @@ form{
 
   @media screen and (max-width: 991px){
     margin-bottom: 20px;
+  }
+
+  img{
+
+    @media screen and (max-width: 575px){
+      height: 120px;
+      width: 100%;
+      object-fit: contain;
+    }
+    
   }
 
   &-desc{
@@ -364,4 +386,30 @@ form{
 .hero-header{
   background: #F9EBE8;
   padding: 100px 0;
+}
+
+.upload-file{
+
+  padding: 24px 0px;
+  background: #F5F6FF;
+  border: 1px dashed #A9A9A9;
+  border-radius: 12px;
+  margin: 0px;
+
+  &-button{
+    height: 100%;
+    background: transparent;
+    border: 1px solid #2639F2;
+    border-radius: 12px;
+
+    // &::-webkit-file-upload-button {
+    //   visibility: hidden;
+    // }
+
+    // &::before {
+    //   content: 'Or choose file from computer';
+     
+    // }
+  }
+
 }

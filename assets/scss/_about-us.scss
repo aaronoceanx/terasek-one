@@ -1,0 +1,77 @@
+.about{
+  &-wedo{
+    padding: 80px 0px;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
+  }
+  &-different{
+    padding: 80px 0px;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
+  }
+
+  &-custody{
+
+    padding: 80px 0;
+
+    &-card{
+      background: #F9EBE8;
+      border-radius: 40px;
+      padding: 65px 85px;
+      
+      @media screen and (max-width: 575px){
+        padding:40px;
+      }
+
+      &-title{
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 130%;
+
+        @media screen and (max-width: 991px){
+          font-size: 24px;
+          line-height: 130%;
+          text-align: center;
+        }
+      }
+
+      &-image{
+        @media screen and (max-width: 575px){
+          height: 100px;
+          
+        }
+      } 
+    }
+  }
+
+  &-team{
+    padding: 80px 0 60px 0;
+
+    &-card{
+
+      padding-right: 36px;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 991px){
+        padding-right: 0px;
+        
+      }
+
+      &-img{
+        width: 170px;
+        height: 170px;
+        border-radius: 8px;
+      }
+
+    }
+  }
+
+  &-contact{
+    padding: 80px 0;
+    @media screen and (max-width: 575px){
+      padding:40px;
+    }
+  }
+}

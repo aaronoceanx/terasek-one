@@ -290,7 +290,7 @@ form{
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    padding: 12px 0px 12px 16px;
+    padding: 12px 16px 12px 16px;
   }
 }
 
@@ -386,4 +386,30 @@ form{
 .hero-header{
   background: #F9EBE8;
   padding: 100px 0;
+}
+
+.upload-file{
+
+  padding: 24px 0px;
+  background: #F5F6FF;
+  border: 1px dashed #A9A9A9;
+  border-radius: 12px;
+  margin: 0px;
+
+  &-button{
+    height: 100%;
+    background: transparent;
+    border: 1px solid #2639F2;
+    border-radius: 12px;
+
+    // &::-webkit-file-upload-button {
+    //   visibility: hidden;
+    // }
+
+    // &::before {
+    //   content: 'Or choose file from computer';
+     
+    // }
+  }
+
 }

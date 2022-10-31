@@ -809,6 +809,9 @@ form .form-control {
   height: 170px;
   margin-bottom: 36px;
 }
+.faq-button h4 {
+  color: #000000;
+}
 .faq-button:hover {
   background: rgba(255, 67, 22, 0.1);
 }

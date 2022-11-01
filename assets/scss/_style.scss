@@ -291,6 +291,26 @@ form{
     font-size: 16px;
     line-height: 150%;
     padding: 12px 16px 12px 16px;
+    border: 1px solid #A9A9A9;
+    border-radius: 12px;
+
+    &.append{
+      border-right: 0;
+    }
+
+    &.code{
+      padding:10px 15px ;
+      width:40px;
+      margin-right: 10px;
+    }
+  }
+
+  .input-group-text{
+    padding: 12px 16px 12px 16px;
+    background-color: $t-white;
+    border: 1px solid #A9A9A9;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -395,21 +415,48 @@ form{
   border: 1px dashed #A9A9A9;
   border-radius: 12px;
   margin: 0px;
+}
 
-  &-button{
-    height: 100%;
-    background: transparent;
-    border: 1px solid #2639F2;
-    border-radius: 12px;
+.accordion-item{
+  margin-bottom: 24px;
+  border: 1px solid #DEDEDE;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 
-    // &::-webkit-file-upload-button {
-    //   visibility: hidden;
-    // }
-
-    // &::before {
-    //   content: 'Or choose file from computer';
-     
-    // }
+  @media screen and (max-width: 575px){
+    margin-bottom: 8px;
   }
-
+}
+.accordion-flush .accordion-item:first-child {
+  border-top: 1px solid #DEDEDE;
+}
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 1px solid #DEDEDE;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 12px;
+}
+.accordion .accordion-item + .accordion-item {
+  
+  border-top: 1px solid #DEDEDE;
+}
+.accordion-button{
+  &:not(.collapsed) {
+    color: $t-black; 
+    background-color:$t-white;
+    border-bottom: 1px solid #DEDEDE;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  &:focus{
+    border-color: #DEDEDE;
+    box-shadow: none;
+  }
+  &:not(.collapsed)::after {
+    background-image: url(/assets/images/arrow_drop_down.png);
+    transform: var(--bs-accordion-btn-icon-transform);
+  }
+  &:after{
+    background-image: url(/assets/images/arrow_drop_down.png);
+  }
 }

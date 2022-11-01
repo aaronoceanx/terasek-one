@@ -191,6 +191,14 @@ p.small {
     width: 100%;
   }
 }
+@media screen and (max-width: 575px) {
+  .btn-blue.small-mobile {
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
 .btn-blueinv {
   background-color: #ffffff;
   border: 1px solid #2639F2;
@@ -359,9 +367,28 @@ form .input-group-text {
   display: none;
 }
 
+.link-blue {
+  color: #2639F2;
+}
+.link-blue:hover {
+  text-decoration: underline;
+}
+
 .hero-header {
   background: #F9EBE8;
   padding: 100px 0;
+}
+.hero-header-dashboard {
+  padding-top: 117px;
+  background: #F9EBE8;
+}
+
+.border-start {
+  border-left: 1px solid #A9A9A9;
+}
+
+.border-end {
+  border-right: 1px solid #A9A9A9;
 }
 
 .upload-file {
@@ -888,9 +915,6 @@ form .input-group-text {
 .login-main {
   width: 377px;
 }
-.login .login-link {
-  color: #2639F2;
-}
 
 .register {
   height: 80vh;
@@ -927,9 +951,54 @@ form .input-group-text {
     padding: 0 24px;
   }
 }
-.register .register-link {
+
+.dashboard-nav {
+  padding-bottom: 16px;
+  overflow: auto;
+}
+.dashboard-nav-item {
+  padding: 0px 32px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 991px) {
+  .dashboard-nav-item {
+    padding: 0px 16px;
+  }
+}
+.dashboard-nav-item.start {
+  padding: 0px 32px 0px 0px;
+}
+.dashboard-nav-item.active {
+  color: #FF4316;
+}
+.dashboard-body {
+  padding: 40px 0 100px 0px;
+}
+.dashboard-card {
+  padding: 21px 18px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-bottom: 36px;
+}
+.dashboard-card-button {
+  width: 190px;
+}
+@media screen and (max-width: 575px) {
+  .dashboard-card-button {
+    width: 126px;
+  }
+}
+.dashboard-card-link {
   color: #2639F2;
 }
-.register .register-link:hover {
+.dashboard-card-link:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 991px) {
+  .dashboard-card-link {
+    font-size: 12px;
+    line-height: 150%;
+  }
 }/*# sourceMappingURL=theme.css.map */

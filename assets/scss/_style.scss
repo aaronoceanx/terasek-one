@@ -197,11 +197,17 @@ p{
     }
 
     &.mobile-w-100{
-
       @media screen and (max-width: 991px){
         width: 100%;
       }
-      
+    }
+    &.small-mobile{
+      @media screen and (max-width: 575px){
+        padding: 8px 16px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+      }
     }
   }
   &-blueinv{
@@ -403,9 +409,28 @@ form{
   }
 }
 
+.link-blue{
+  color: $t-blue;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
 .hero-header{
   background: #F9EBE8;
   padding: 100px 0;
+
+  &-dashboard{
+    padding-top: 117px;
+    background: #F9EBE8;
+  }
+}
+
+.border-start{
+  border-left: 1px solid #A9A9A9;
+}
+.border-end{
+  border-right: 1px solid #A9A9A9;
 }
 
 .upload-file{

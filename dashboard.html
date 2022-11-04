@@ -255,8 +255,8 @@
           </div>
         </div>
         <div class="row mt-4">
-          <div class="col-6">
-            <div class="referral-card">
+          <div class="col-lg-6 col-12">
+            <div class="referral-card circle mb-lg-0 mb-3">
               <div class="referral-card-header">
                 <div>
                   <h3 class="header-m">
@@ -266,22 +266,61 @@
                 </div>
                 <p class="referral-card-header-text">This Month</p>
               </div>
-              <div class="row mt-5">
-                <div class="col-8">
-                  <div class="progress mx-auto" data-value='80' id="test">
+              <div class="row mt-lg-2 mt-5 referral-card-body-circle">
+                <div class="col-8 position-relative pt-md-0 pt-4">
+                  <div class="position-absolute">
+                    <div class="progress mx-auto" data-value='80' id="test">
                     <span class="progress-left">
                       <span class="progress-bar"></span>
                     </span>
                     <span class="progress-right">
                       <span class="progress-bar"></span>
                     </span>
+                    </div>
+                  </div>
+                  <div class="referral-card-active">
+                    <div class="progress progress-active mx-auto" data-value='40' id="test2">
+                      <span class="progress-left progress-active">
+                        <span class="progress-bar progress-active"></span>
+                      </span>
+                      <span class="progress-right progress-active">
+                        <span class="progress-bar progress-active"></span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-4 d-flex h-100 flex-column justify-content-center">
+                  <div class="row mt-lg-5 mt-3 mb-lg-3 mb-4">
+                    <div class="col-3">
+                      <div class="referral-card-circle">
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <p>Accepted invitation</p>
+                      <h3 class="header-m">
+                        75
+                      </h3>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="referral-card-circle progress-active">
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <p>Active Referrals</p>
+                      <h3 class="header-m">
+                        25
+                      </h3>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-12">
             <div class="referral-card">
               <div class="referral-card-header">
                 <div>
@@ -291,6 +330,10 @@
                   <p class="referral-card-header-text">Referral fees earned</p>
                 </div>
                 <p class="referral-card-header-text">This Month</p>
+              </div>
+              <div class="referral-card-body mt-5">
+                <canvas id="chart" >
+                </canvas>
               </div>
             </div>
           </div>
@@ -477,6 +520,87 @@
       </div>
     </div>
   </footer>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    var chBar = document.getElementById("chart");
+
+    if(chBar){
+      new Chart(chBar,{
+        type:"bar",
+        data:{
+          labels: [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5",
+          ],
+          datasets:[
+            {
+              borderRadius: 6,
+              barThickness: 21,
+              data:[800,4500,2900,7200,800],
+              backgroundColor:"#FF4316",
+              
+            },
+          ],
+        },
+        
+        options: {
+          responsive:true,
+          maintainAspectRatio:false,
+         
+          plugins:{
+            legend: {
+            display: false
+            }
+          },
+          scales: {
+            x: {
+              display: true,
+              grid: {
+                display: false,
+                drawBorder: false, //<- set this
+              },
+              ticks: {
+                
+                  font:{
+                    size:14,
+                  },
+                  color: '#686868'
+                }
+            },
+            y: {
+                display: true,
+                ticks: {
+                  callback: function(value, index, ticks) {
+                    return 'RM' + value;
+                  },
+                  callback: function(val, index) {
+                    // Hide every 2nd tick label
+                    return index % 2 === 0 ? this.getLabelForValue(val) : '';
+                  },
+                  font:{
+                    weight:'bold',
+                    size:14
+                  },
+                  color: "#000000"
+                },
+                grid: {
+                  color: '#dedede',
+                  drawBorder: false, //<- set this
+                },
+            },
+            },
+        }
+      });
+    }
+    
+    
+
+  </script>
 
   <script src="./assets/js/dashboard.js"></script>
   <!-- Bootstrap Bundle with Popper -->

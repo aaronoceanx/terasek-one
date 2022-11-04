@@ -67,6 +67,15 @@
       border: 1px solid #DEDEDE;
       border-radius: 12px;
       padding: 18px;
+      height: 445px;
+
+      &.circle{
+        @media screen and (max-width: 575px){
+          height: 395px;
+        }
+      }
+
+      
 
       &-header{
         display: flex;
@@ -74,6 +83,44 @@
 
         &-text{
           color: #686868;
+        }
+      }
+
+      &-body{
+        height: 311px;
+
+        &-circle{
+          padding:32px 0 32px 32px;
+
+          @media screen and (max-width: 575px){
+            padding:8px 0 8px 8px;
+          } 
+        }
+      }
+
+      &-active{
+        position: absolute;
+        left: 38px;
+        top: 25px;
+
+        @media screen and (max-width: 767px){
+          top: 49px;
+        }
+      }
+
+      &-circle{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: $t-red;
+
+        @media screen and (max-width: 767px){
+          width: 16px;
+          height: 16px;
+        }
+
+        &.progress-active{
+          background: #F3AB47;
         }
       }
     }
@@ -216,6 +263,20 @@
   height: 250px;
   background: none;
   position: relative;
+
+  @media screen and (max-width: 767px){
+    width: 150px;
+    height: 150px;
+  }
+
+  &.progress-active{
+    width: 200px;
+    height: 200px;
+    @media screen and (max-width: 767px){
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .progress::after {
@@ -223,10 +284,14 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 6px solid #eee;
+  border: 10px solid #eee;
   position: absolute;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: 575px){
+    border: 8px solid #eee;
+  }
 }
 
 .progress>span {
@@ -240,6 +305,10 @@
 
 .progress-bar{
   color:$t-red ;
+
+  &.progress-active{
+    color: #F3AB47;
+  }
 }
 
 .progress .progress-left {
@@ -250,10 +319,14 @@
   width: 100%;
   height: 100%;
   background: none;
-  border-width: 6px;
+  border-width: 10px;
   border-style: solid;
   position: absolute;
   top: 0;
+
+  @media screen and (max-width: 575px){
+    border-width: 8px;
+  }
 }
 
 .progress .progress-left .progress-bar {

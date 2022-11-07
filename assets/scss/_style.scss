@@ -31,6 +31,7 @@ a{
 body{
   font-family: 'Quicksand', sans-serif;
   background: #F7F7F7;
+  color: $t-black;
 }
 /* remember to define focus styles! */
 :focus {
@@ -39,6 +40,9 @@ body{
 
 .text-red{
   color: $t-red;
+}
+.text-grey{
+  color: #686868;
 }
 
 .header{
@@ -427,6 +431,10 @@ form{
   &-dashboard{
     padding-top: 117px;
     background: #F9EBE8;
+
+    @media screen and (max-width: 575px){
+      padding-top: 24px;
+    }
   }
 }
 

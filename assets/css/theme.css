@@ -41,9 +41,11 @@ body {
 .text-red {
   color: #FF4316;
 }
-
 .text-grey {
   color: #686868;
+}
+.text-white {
+  color: #ffffff;
 }
 
 .header-2xl {
@@ -110,6 +112,13 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 130%;
+}
+@media screen and (max-width: 575px) {
+  .header-xs {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 130%;
+  }
 }
 .header-2xs {
   font-size: 13px;
@@ -316,6 +325,11 @@ form .input-group-text {
     margin-bottom: 20px;
   }
 }
+.company-card img {
+  height: 160px;
+  width: 100%;
+  object-fit: contain;
+}
 @media screen and (max-width: 575px) {
   .company-card img {
     height: 120px;
@@ -329,22 +343,6 @@ form .input-group-text {
   flex-direction: column;
   justify-content: space-between;
 }
-.company-card-collapse h5 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  margin-bottom: 8px;
-}
-.company-card-collapse p {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  margin-bottom: 24px;
-}
-.company-card-collapse a {
-  text-decoration: underline;
-  display: block;
-}
 .company-card-button {
   display: flex;
   flex-direction: row;
@@ -353,6 +351,8 @@ form .input-group-text {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
 }
 .company-card-button:hover {
   text-decoration: underline;
@@ -360,20 +360,41 @@ form .input-group-text {
 .company-card-button:hover svg path {
   fill: blue;
 }
-.company-card-button[aria-expanded=true] .view {
-  display: none;
+.company-card-modal .modal-header {
+  border-bottom: none;
 }
-.company-card-button[aria-expanded=true] .collapse-span {
-  display: inline;
+.company-card-modal-details {
+  border-left: 1px solid #DEDEDE;
 }
-.company-card-button[aria-expanded=true] svg {
-  transform: rotate(180deg);
+.company-card-modal-details h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
 }
-.company-card-button[aria-expanded=false] .view {
-  display: inline;
+.company-card-modal-details p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 24px;
 }
-.company-card-button[aria-expanded=false] .collapse-span {
-  display: none;
+.company-card-modal-details a {
+  text-decoration: underline;
+  display: block;
+  color: blue;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 767px) {
+  .company-card-modal-details {
+    margin-top: 20px;
+    border-left: none;
+  }
+}
+.company-card-modal .modal-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: blue;
 }
 
 .link-blue {
@@ -573,11 +594,23 @@ form .input-group-text {
 }
 
 .home-hero {
-  padding: 110px 0px 80px 0px;
+  background: url(../images/homepage-hero.png);
+  min-height: 600px;
+  padding: 130px 0px 200px 0px;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .home-hero {
-    padding: 40px 0px 80px 0px;
+    padding: 94px 0px;
+    min-height: 428px;
+    background-position: right;
+  }
+}
+.home-info {
+  padding: 80px 0;
+}
+@media screen and (max-width: 767px) {
+  .home-info {
+    padding: 40px 0px;
   }
 }
 .home-refer {
@@ -689,6 +722,14 @@ form .input-group-text {
     padding: 0 10px;
   }
 }
+.home-offering {
+  padding: 80px 0;
+}
+@media screen and (max-width: 767px) {
+  .home-offering {
+    padding: 40px 0px;
+  }
+}
 .home-offering .product-list-carousel {
   margin-bottom: 50px;
 }
@@ -699,7 +740,7 @@ form .input-group-text {
   height: 8px;
   width: 8px;
   border-radius: 100%;
-  background-color: #dedede;
+  background-color: #a9a9a9;
 }
 .home-contact {
   padding: 80px 0 160px 0;

@@ -1,0 +1,115 @@
+.referral{
+
+  &-header{
+    padding: 40px 0;
+
+    @media screen and (max-width: 767px){
+      padding: 24px 0 40px 0;
+      margin-bottom: 16px;
+      background-color: $t-white;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+    }
+
+
+    &-step{
+      margin-top: 80px;
+    }
+
+    &-no{
+      border: 8px solid #F9EBE8;
+      color: #DC3545;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &-title{
+      width: 150px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &-para{
+      color: #686868;
+      text-align: center;
+    }
+  }
+
+  &-form{
+    padding: 100px 0 50px 0;
+
+    @media screen and (max-width: 767px){
+      padding: 24px 0 40px 0;
+      margin-bottom: 16px;
+      background-color: $t-white;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+    }
+  }
+
+  &-charts{
+    padding: 50px 0 100px 0 ;
+    @media screen and (max-width: 767px){
+      padding: 0 0 40px 0;
+      margin-bottom: 16px;
+      background-color: $t-white;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+    }
+  }
+
+  &-mobile-step{
+
+    .list-group-item{
+      background-color: transparent;
+    }
+    .list-group.vertical-steps{
+      padding-left:10px;
+    }
+    .list-group.vertical-steps .list-group-item{
+      border:none;
+      border-left:6px solid #F9EBE8;
+      box-sizing:border-box;
+      border-radius:0;
+      counter-increment: step-counter;
+      padding-left:3px;
+      padding-right:0px;
+      padding-bottom:20px;  
+      padding-top:0px;
+    }
+    .list-group.vertical-steps .list-group-item.active{
+      background-color:transparent;
+      color:inherit;
+    }
+    .list-group.vertical-steps .list-group-item:last-child{
+      border-left:3px solid transparent;
+      padding-bottom:0;
+    }
+    .list-group.vertical-steps .list-group-item::before {
+      border-radius: 50%;
+      color:$t-red;
+      content: counter(step-counter);
+      border:6px solid #F9EBE8;
+      background-color: $t-white;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 130%;
+      display:inline-block;
+      float:left;
+      height:56px;
+      margin-left:-35px;
+      text-align:center;  
+      width:56px;  
+    }
+    .list-group.vertical-steps .list-group-item span,
+    .list-group.vertical-steps .list-group-item a{
+      display:block;
+      overflow:hidden;
+      padding-top:2px;
+    }
+    
+  }
+
+
+}

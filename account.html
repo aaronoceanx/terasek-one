@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <title>My Account</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light pt-3">
+    <div class="container">
+      <a class="navbar-brand" href="./homepage.html"><img class="image-100" src="./assets/images/logo.png" alt=""></a>
+      <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <div class="d-lg-flex align-items-center d-none">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./product-list.html">Our Offering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">Refer & Earn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">Login</a>
+            </li>
+          </ul>
+          <a href="" class="btn btn-blue">Register</a>
+        </div> -->
+      <!--For logged in users-->
+      <div class="d-lg-flex d-none">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-m" href="#">Make a Bid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-m" href="#">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar_mobile">
+        <div class=" container pt-3">
+          <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="my-1 mx-2 close"><img src="./assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+          <!-- <div>
+            <ul class="navbar-nav my-5 ps-3">
+              <li class="nav-item">
+                <a href="./homepage.html" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./product-list.html" class="mobile-nav-link">Our Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about-us.html" class="mobile-nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Refer & Earn</a>
+              </li>
+            </ul>
+            <div class="ps-3">
+              <a href="" class="btn btn-blue">Register</a>
+            </div>
+          </div> -->
+          <!--For logged-in users-->
+          <div>
+            <ul class="navbar-nav my-5 ps-3">
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Make a bid</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">FAQ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mobile-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- Header for Desktop only-->
+  <section class="account-header d-lg-block d-none">
+    <div class="d-flex justify-content-center align-items-center position-relative">
+      <div class="d-flex">
+        <div class="account-nav active">
+          <div class="account-nav-circle">1</div>
+          Personal Information
+        </div>
+        <div class="account-nav">
+          <div class="account-nav-circle">2</div>
+          Qualifying Criteria
+        </div>
+        <div class="account-nav">
+          <div class="account-nav-circle">3</div>
+          Income and Asset Declaration
+        </div>
+      </div>
+      <div class="account-nav-button">
+        <a href="" class="btn btn-blue">Next</a>
+      </div>
+    </div>
+  </section>
+  <!--Header for Mobile only-->
+  <section class="d-lg-none d-block">
+    <div class="account-header-mobile">
+      <span>❮</span>
+      <h5 class="header xs">Personal Information</h5>
+      <h5></h5>
+    </div>
+  </section>
+
+  <section class="account-personal">
+    <form action="">
+
+      <div class="container container-fullwidth mt-3 mt-lg-0 p-0">
+        <div class="account-personal-card">
+          <div class="account-personal-card-title">
+            <p>Personal Details</p>
+          </div>
+          <div class="account-personal-card-body">
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="fullName" class="form-label">Full Name as per IC</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your name as per IC" aria-label="Full Name as per IC">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="nric" class="form-label">NRIC</label>
+                <input type="text" class="form-control" id="nric" placeholder="Enter your IC number" aria-label="NRIC">
+              </div>
+            </div>
+            <div>
+              <label for="personal-dropzone" class="form-label">Upload File</label>
+              <div class="row upload-file text-m text-center">
+                <div class="col-lg-4 d-lg-block d-none p-4">
+                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                    Drag and Drop your file to upload
+                  </div>
+                </div>
+                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                  <div class="upload-file-dummy">
+                    Or choose file from computer
+                  </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="upload-file-qr">
+                    <img src="./assets/images/qr.png" alt="qr">
+                  </div>
+                  Or upload your file by scanning the QR
+                </div>
+                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                  <div class="upload-file-dummy">
+                    Upload file
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-fullwidth p-0">
+        <div class="account-personal-card">
+          <div class="account-personal-card-title">
+            <p>Residency Details</p>
+          </div>
+          <div class="account-personal-card-body">
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputAddress3" placeholder="Enter your address">
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" class="form-select">
+                  <option selected>Malaysia</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="nric" class="form-label">State</label>
+                <select id="nric" class="form-select">
+                  <option selected>Select your state</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="postcode" class="form-label">Postcode</label>
+                <input type="text" class="form-control" id="postcode" placeholder="Enter your postcode">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="city" class="form-label">City</label>
+                <select id="city" class="form-select">
+                  <option selected>Select your city</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="residency-dropzone" class="form-label">Proof of Address (Utility Bill)</label>
+              <div class="row upload-file text-m text-center">
+                <div class="col-lg-4 d-lg-block d-none p-4">
+                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                    Drag and Drop your file to upload
+                  </div>
+                </div>
+                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                  <div class="upload-file-dummy">
+                    Or choose file from computer
+                  </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="upload-file-qr">
+                    <img src="./assets/images/qr.png" alt="qr">
+                  </div>
+                  Or upload your file by scanning the QR
+                </div>
+                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                  <div class="upload-file-dummy">
+                    Upload file
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-fullwidth p-0">
+        <div class="account-personal-card">
+          <div class="account-personal-card-title">
+            <p>Contacts</p>
+          </div>
+          <div class="account-personal-card-body">
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="mobile" class="form-label">Mobile</label>
+                <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile phone number">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="residentialNumber" class="form-label">Residential</label><span class="label-optional">(Optional)</span>
+                <input type="tel" class="form-control" id="residentialNumber" placeholder="Enter residential number">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="officeNumber" class="form-label">Office</label><span class="label-optional">(Optional)</span>
+                <input type="text" class="form-control" id="officeNumber" placeholder="Enter office number">
+              </div>
+            </div>
+            <div>
+              <label for="contacts-dropzone" class="form-label">Mobile Phone Bill</label>
+              <div class="row upload-file text-m text-center">
+                <div class="col-lg-4 d-lg-block d-none p-4">
+                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                    Drag and Drop your file to upload
+                  </div>
+                </div>
+                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                  <div class="upload-file-dummy">
+                    Or choose file from computer
+                  </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="upload-file-qr">
+                    <img src="./assets/images/qr.png" alt="qr">
+                  </div>
+                  Or upload your file by scanning the QR
+                </div>
+                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                  <div class="upload-file-dummy">
+                    Upload file
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-fullwidth p-0">
+        <div class="account-personal-card">
+          <div class="account-personal-card-title">
+            <p>Bank Information</p>
+          </div>
+          <div class="account-personal-card-body">
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="bankName" class="form-label">Bank Name</label>
+                <select id="bankName" class="form-select">
+                  <option selected>Select your bank name</option>
+                  <option>Maybank</option>
+                  <option>CitiBank</option>
+                  <option>Public bank</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="bankAccountName" class="form-label">Bank Account Name</label>
+                <input type="tel" class="form-control" id="bankAccountName" placeholder="Enter your bank account name">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="bankAccountNumber" class="form-label">Bank Account Number</label>
+                <input type="text" class="form-control" id="bankAccountNumber" placeholder="Enter your bank account number">
+              </div>
+            </div>
+            <div>
+              <label for="contacts-dropzone" class="form-label">Bank Statement (top part)</label>
+              <div class="row upload-file text-m text-center">
+                <div class="col-lg-4 d-lg-block d-none p-4">
+                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                    Drag and Drop your file to upload
+                  </div>
+                </div>
+                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                  <div class="upload-file-dummy">
+                    Or choose file from computer
+                  </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="upload-file-qr">
+                    <img src="./assets/images/qr.png" alt="qr">
+                  </div>
+                  Or upload your file by scanning the QR
+                </div>
+                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                  <div class="upload-file-dummy">
+                    Upload file
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container-fullwidth p-0">
+        <div class="account-personal-card">
+          <div class="account-personal-card-title">
+            <p>My Emergency Contact Information<span class="label-optional">
+              (Optional)
+            </span></p>
+          </div>
+          <div class="account-personal-card-body">
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="eFullName" class="form-label">Full Name as per IC</label>
+                <input type="text" class="form-control" id="eFullName" placeholder="Enter your name as per IC">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="eNric" class="form-label">NRIC</label>
+                <input type="text" class="form-control" id="eNric" placeholder="Enter your IC number" >
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="eMobileNumber" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="eMobileNumber" placeholder="Enter mobile phone number" >
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="eResidentialNumber" class="form-label">Residential Number</label>
+                <input type="text" class="form-control" id="eResidentialNumber" placeholder="Enter residential phone number" >
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="eOfficeNumber" class="form-label">Office Number</label>
+                <input type="tel" class="form-control" id="eOfficeNumber" placeholder="Enter office phone number" >
+              </div>
+              <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+                <label for="eEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="eEmail" placeholder="Enter email address" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- Declaration Modal -->
+  <div class="modal fade" id="declarationModal" tabindex="-1" aria-labelledby="declarationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Declaration by Applicant</p>
+          <button class="button-print" >
+            <img src="./assets/images/print.png" alt="printer">
+            <p class="small">Print</p>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            I hereby confirm, declare and undertake to Terasek One Sdn Bhd (“Terasek”) that:-<br><br>
+            <ol class="ms-4 declaration-modal-content">
+              <li>Do you jointly with your spouse, have a gross annual income > RM400,000 or equivalent in foreign currencies in the preceding 12 months?</li>
+              <li>I have not withheld any information which may result in Terasek rejecting the my application, request and/or instruction;</li>
+              <li> I am over eighteen (18) years old and that I am not an undischarged bankrupt and/or having a criminal record and/or having any litigation case pending against me for any debt due;</li>
+              <li>I will inform Terasek in writing of any changes to the information supplied/furnished and hereby authorise Terasek to verify the same with any source as Terasek may in Terasek’s sole discretion deem appropriate;</li>
+              <li>I have read and accepted the Terms and Conditions contained in this  Application For Opening of Account Form and I have read and accepted the Privacy Policy and agree with the processing of my/our personal data.</li>
+              <li>I consent to Terasek issuing and delivering bid notes, statements of account, Trust account statements as well as any other statements relating to my account to me in electronic form via e-mail in accordance with the Terms and Conditions as contained in this  Application For Opening of Account Form;</li>
+              <li>Unless otherwise disclosed in writing, l hereby declare and warrant that I am the ultimate Beneficial Owner (see Definition) of this account and that no person other than myself have or will have any interest in, influence or control over this account, whatsoever. l hereby declare and warrant that the information given in this application submitted to you are complete, true and accurate and that l/we have not wilfully withheld any material fact/information.</li>
+              <li>I declare that l am not a U.S. Person (to define*) and in the event of a change in my status that I become a U.S. Person, I shall notify Terasek of the change. I acknowledge that I am responsible for my own tax affairs and declare that l have not committed or been convicted of any lax crimes.</li>
+              <li>I am/We are aware that Terasek uses a custodian/trustee system and all cash funds held by the custodian/trustee are held on my/our behalf by the custodian/trustee appointed by Terasek, hence the cash fund is not held in my name.</li>
+              <li>I understand that the application for Primary Offerings is subject to the collective approval of Terasek and the respective issuer. Notwithstanding the aforesaid, Terasek is absolutely entitled, at its sole discretion, to accept or reject my bid applications without assigning any reason thereof.</li>
+              <li>I confirm that I have previously read and accepted Terasek’s terms and conditions online at Terasek’s website while applying to open my account online and said terms and conditions shall be binding on me.</li>
+            </ol>
+            This application form (“Application Form”) and all its parts shall be subject to Terasek’s acceptance. Terasek’s acceptance of the Client’s duly executed and affirmed application shall constitute a valid agreement binding on Terasek and the Client based on the declaration and stipulations herein contained, the information in the Application Form and all the applicable terms and conditions in the parts attached hereto as if an agreement under written law relating to dealing in securities has been properly constituted and executed. The acceptance of the Client’s application is deemed effective upon such notice being sent by Terasek in accordance with clause [17 of Part zz]. The Client shall, if so requested by Terasek, execute a formal agreement relating to the same.
+          </p>
+          <div class="d-flex mt-4">
+            <input type="checkbox" name="agree" class="form-check-input me-2" id="declarationCheck" />
+            <p>I confirm, accept and agree to all of the above.</p>
+          </div>
+          <a href=""><p class="small d-block mt-4 ">Terms & Condition</p></a>
+        </div>
+        <div class="modal-footer border-top-0  p-lg-4">
+          <div>
+            <a class="btn btn-blueplain" data-bs-dismiss="modal">Cancel</a>
+            <a class="btn btn-blue">Next</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#declarationModal">
+    Demo Declaration
+  </button>
+
+  
+
+
+  <footer>
+    <div class="d-md-block d-none">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row row-cols-5 py-5">
+            <div class="col footer-nav">
+              <span class="footer-nav-title">Sitemap Title</span>
+              <ul class="nav flex-column mt-3">
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col footer-nav">
+              <span class="footer-nav-title">Sitemap Title</span>
+              <ul class="nav flex-column mt-3">
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col footer-nav">
+              <span class="footer-nav-title">Sitemap Title</span>
+              <ul class="nav flex-column mt-3">
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="">Sitemap Item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col footer-nav">
+              <span class="footer-nav-title">Connect</span>
+              <div class="mt-3">
+                <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+                <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+                <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+                <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./assets/images/logo-white.png" alt="terasek-logo">
+            </div>
+    
+          </div>
+          <div class="d-flex justify-content-center mt-3 pb-2">
+  
+            <div class="footer-terms d-flex">
+              <div class="footer-terms-wrap"><a href="">Disclaimer</a></div>
+              <div class="footer-terms-wrap wrap-border"><a href="">Privacy Policy</a></div>
+              <div class="footer-terms-wrap wrap-border"><a href="">Anti Corruption</a></div>
+              <div class="footer-terms-wrap wrap-border"><a href="">Terms of Use</a></div>
+              <div class="footer-terms-wrap"><a href="">Terms of Use</a></div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-xs text-white">
+        <div class="container">
+          Copyright This website provides general information on products available via T-One and allows Members to view, bid for and invest in these products. We do not provide investment advice, and information on our website does not take into account your personal and financial circumstances, needs and objectives. You should consider the appropriateness of the information with regards to your personal circumstances, needs and objectives before making an investment decision. T-One makes no warranties or representations regarding the material on this website, including those regarding its fitness for any purpose, or any defects or errors. T-One is not liable to users of the information for any loss or damage however caused resulting from use of this site. 
+          <br><br>
+          All contents of, and materials published on, this website, including but not limited to the text, images and other information herein and their arrangement, are protected by copyright, trademark and other proprietary rights of Terasek One Sdn Bhd. This means that you shall not without the express written consent of Terasek One Sdn Bhd and / or the owners of the contents, to use, distribute or reproduce any of the contents published in this website.
+          <br><br>
+          Nothing contained herein shall be construed as conferring by implication, estoppels, or otherwise any license or right under any patent, trademark, or proprietary rights of Terasek One Sdn Bhd or of any third party. Except as expressly provided above, nothing contained herein shall be construed as conferring any license or right under any Terasek One Sdn Bhd’s copyright.
+        </div>
+      </div>
+    </div>
+    <div class="mobile-footer d-md-none d-block">
+      <div class="container">
+        <img class="mb-4" src="./assets/images/logo-white.png" alt="terasek-logo">
+        <div class="mobile-footer-nav">
+          <a class="footer-dropdown dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sitemap Title
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+          </ul>
+        </div>
+        <div class="mobile-footer-nav">
+          <a class="footer-dropdown dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sitemap Title
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+          </ul>
+        </div>
+        <div class="mobile-footer-nav">
+          <a class="footer-dropdown dropdown-toggle d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sitemap Title
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+            <li><a class="dropdown-item" href="#">Sitemap item</a></li>
+          </ul>
+        </div>
+        <div class="my-4">
+          <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+          <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+          <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+          <a class="footer-nav-social" href=""><img src="./assets/images/facebook.png" alt="facebook"></a>
+        </div>
+        <div class="text-xs text-white">
+          Copyright This website provides general information on products available via T-One and allows Members to view, bid for and invest in these products. We do not provide investment advice, and information on our website does not take into account your personal and financial circumstances, needs and objectives. You should consider the appropriateness of the information with regards to your personal circumstances, needs and objectives before making an investment decision. T-One makes no warranties or representations regarding the material on this website, including those regarding its fitness for any purpose, or any defects or errors. T-One is not liable to users of the information for any loss or damage however caused resulting from use of this site. 
+          <br><br>
+          All contents of, and materials published on, this website, including but not limited to the text, images and other information herein and their arrangement, are protected by copyright, trademark and other proprietary rights of Terasek One Sdn Bhd. This means that you shall not without the express written consent of Terasek One Sdn Bhd and / or the owners of the contents, to use, distribute or reproduce any of the contents published in this website.
+          <br><br>
+          Nothing contained herein shall be construed as conferring by implication, estoppels, or otherwise any license or right under any patent, trademark, or proprietary rights of Terasek One Sdn Bhd or of any third party. Except as expressly provided above, nothing contained herein shall be construed as conferring any license or right under any Terasek One Sdn Bhd’s copyright.
+        </div>
+
+        <div class="footer-terms d-flex flex-wrap py-5">
+          <div class="footer-terms-wrap ps-0"><a href="">Disclaimer</a></div>
+          <div class="footer-terms-wrap wrap-border"><a href="">Privacy Policy</a></div>
+          <div class="footer-terms-wrap wrap-border"><a href="">Anti Corruption</a></div>
+          <div class="footer-terms-wrap wrap-border"><a href="">Terms of Use</a></div>
+          <div class="footer-terms-wrap"><a href="">Terms of Use</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <!-- <div class="ps-5">
+    <a href="" class="btn btn-blueinv">Register</a>
+    <div class="label label-orange">
+    Upcoming
+    </div>
+    <div class="label label-orange part-paid">
+      Partially Paid
+    </div>
+    <div class="label label-green">
+      Live
+      </div>
+    <div class="label label-green">
+      Paid
+    </div> 
+    <div class="label label-grey">
+      Closed
+      </div>
+    <div class="label label-grey">
+      Unpaid
+    </div> 
+  </div> -->
+
+
+  <script src="./assets/js/script.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

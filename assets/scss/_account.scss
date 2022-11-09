@@ -1,0 +1,193 @@
+.account{
+  &-header{
+    padding: 23px 0;
+    background: #FFFFFF;
+    border: 1px solid #dedede;
+
+    &-mobile{
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      background: $t-white;
+    }
+  }
+
+  &-nav{
+    display: flex;
+    color: #A9A9A9;
+    margin-right: 32px;
+
+    &.active{
+      color: $t-black;
+
+      .account-nav-circle{
+        color: $t-black;
+        border: 2px solid $t-black;
+      }
+    }
+
+    &.completed{
+      color: #23CD7B;
+
+      .account-nav-circle{
+        color: #23CD7B;
+        border: 2px solid #23CD7B;
+      }
+    }
+  
+
+    &-circle{
+      width: 24px;
+      height: 24px;
+      border: 2px solid #A9A9A9;
+      font-size: 18px;
+      line-height: 130%;
+      color: #A9A9A9;
+      border-radius: 50%;
+      justify-content: center;
+      margin-right:8px;
+      display:flex;
+      align-items:center;
+    }
+
+    &-button{
+      position: absolute;
+      right: 36px;
+    }
+  }
+
+  &-personal{
+    &-card{
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      margin: 40px auto;
+      background:#FFFFFF;
+      max-width: 900px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+      
+      &-title{
+        padding: 14px 0 14px 24px;
+        border-bottom:1px solid #DEDEDE;
+
+        @media screen and (max-width: 575px){
+          padding: 12px 0 12px 24px;
+        }
+      }
+      &-body{
+        padding: 24px 24px 49px 24px;
+      }
+
+      
+
+    }
+  }
+
+  &-mobile{
+    &-title{
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 0;
+      border-bottom: 1px solid #DEDEDE;
+      background: #ffffff;
+    }
+    &-tabs{
+      display: flex;
+      padding: 18px 20px;
+      background: #ffffff;
+      justify-content: space-between;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+    }
+  }
+
+  &-payment{
+    padding-top: 100px;
+
+    @media screen and (max-width: 575px){
+      padding-top: 20px;
+    }
+
+    &-header{
+      padding: 23px 18px;
+      background: #FFFFFF;
+      border-bottom: 1px solid #dedede;
+    }
+
+    &-back{
+      position: absolute;
+      left: 0;
+    }
+
+    &-card{
+
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
+      border-radius: 12px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      max-width: 582px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+
+      &-title{
+        padding: 14px 0 14px 24px;
+        border-bottom:1px solid #DEDEDE;
+
+        @media screen and (max-width: 575px){
+          padding: 12px 0 12px 24px;
+        }
+      }
+      &-body{
+        padding: 24px;
+      }
+
+    }
+  }
+
+ 
+    
+  
+  
+}
+
+.declaration-modal-content{
+  counter-reset: list;
+
+  li{
+    padding-left: 18px;
+    margin-bottom: 8px;
+  }
+ 
+  & > li{
+    list-style: none;
+    counter-increment: list;
+  }
+
+  & > li::marker {
+    content: counter(list, lower-alpha) ")\a0";
+  }
+  
+  
+}

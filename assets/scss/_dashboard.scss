@@ -31,17 +31,6 @@
     @media screen and (max-width: 575px){
       padding: 0 0 24px 0;
     }
-
-    .container.container-fullwidth{
-
-      @media screen and (max-width: 575px){
-        background: $t-white;
-        border-top: 1px solid #dedede;
-        border-bottom: 1px solid #dedede;
-        margin-bottom: 16px;
-      }
-      
-    }
   }
 
   &-card{

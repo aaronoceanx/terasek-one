@@ -166,6 +166,48 @@
     }
   }
 
+  &-transaction{
+    &-status{
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      max-width: 892px;
+      padding: 40px 0;
+      margin: 40px auto 0 auto;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 37px 0px;
+        margin: 0 auto;
+      }
+    }  
+  }
+
+  &-review{
+    margin-top: 40px;
+    &-card{
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px; 
+      padding: 36px 24px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 36px 24px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+
  
     
   

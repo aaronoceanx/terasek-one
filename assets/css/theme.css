@@ -1877,4 +1877,96 @@ form .input-group-text {
     padding: 36px 24px;
     margin: 0 auto;
   }
+}
+
+.eoi-hero-back {
+  position: absolute;
+  top: 26px;
+}
+.eoi-body-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  max-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.eoi-body-card-title {
+  padding: 14px 19px 14px 18px;
+  border-bottom: 1px solid #DEDEDE;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-title {
+    padding: 12px 0 12px 24px;
+    border-bottom: none;
+  }
+}
+.eoi-body-card-body {
+  background: #F7F7F7;
+}
+.eoi-body-card-body-section {
+  border-bottom: 1px solid #DEDEDE;
+  padding: 18px 19px 8px 19px;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-body-section {
+    margin-bottom: 16px;
+    padding: 0px;
+    border-bottom: none;
+  }
+}
+.eoi-body-card-body-section-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.eoi-body-card-body-section-image {
+  width: 80px;
+  height: 80px;
+}
+.eoi-body-card-body-section-del {
+  border: none;
+  background: transparent;
+}
+.eoi-body-card-body-section-indicative-width {
+  width: 192px;
+}
+@media screen and (max-width: 991px) {
+  .eoi-body-card-body-section-indicative-width {
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-body-section-indicative-width {
+    width: 100%;
+  }
+}
+.eoi-disclaimer {
+  padding-bottom: 160px;
+}
+@media screen and (max-width: 767px) {
+  .eoi-disclaimer {
+    padding-bottom: 32px;
+  }
+}
+.eoi-disclaimer-card {
+  background: #EEF3FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 16px auto;
 }/*# sourceMappingURL=theme.css.map */

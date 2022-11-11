@@ -306,6 +306,10 @@ form .form-control.code {
   width: 40px;
   margin-right: 10px;
 }
+form .form-check-input:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
 form .label-optional {
   font-size: 12px;
   line-height: 150%;
@@ -319,6 +323,12 @@ form .form-select {
   padding: 12px 16px 12px 16px;
   border: 1px solid #A9A9A9;
   border-radius: 12px;
+}
+form .form-others-specify {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #1f1f1f;
 }
 form .input-group-text {
   padding: 12px 16px 12px 16px;
@@ -1789,4 +1799,82 @@ form .input-group-text {
 }
 .declaration-modal-content > li::marker {
   content: counter(list, lower-alpha) ") ";
+}
+
+@media screen and (max-width: 575px) {
+  .account-qualify {
+    margin-top: 20px;
+  }
+}
+.account-qualify-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  max-width: 892px;
+  padding: 36px 24px;
+}
+@media screen and (max-width: 575px) {
+  .account-qualify-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+.account-income-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  max-width: 900px;
+}
+@media screen and (max-width: 575px) {
+  .account-income-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.account-income-card-title {
+  padding: 14px 0 14px 24px;
+  border-bottom: 1px solid #DEDEDE;
+}
+@media screen and (max-width: 575px) {
+  .account-income-card-title {
+    padding: 12px 0 12px 24px;
+  }
+}
+.account-income-card-body {
+  padding: 24px 24px 49px 24px;
+}
+.account-income-review {
+  margin-top: 40px;
+}
+.account-income-review-card {
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 36px 24px;
+  max-width: 892px;
+  margin: 0px auto;
+}
+@media screen and (max-width: 575px) {
+  .account-income-review-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 36px 24px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=theme.css.map */

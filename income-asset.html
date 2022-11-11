@@ -128,15 +128,15 @@
   <section class="account-header d-lg-block d-none">
     <div class="d-flex justify-content-center align-items-center position-relative">
       <div class="d-flex">
-        <div class="account-nav active">
+        <div class="account-nav completed">
           <div class="account-nav-circle">1</div>
           Personal Information
         </div>
-        <div class="account-nav">
+        <div class="account-nav completed">
           <div class="account-nav-circle">2</div>
           Qualifying Criteria
         </div>
-        <div class="account-nav">
+        <div class="account-nav active">
           <div class="account-nav-circle">3</div>
           Income and Asset Declaration
         </div>
@@ -150,53 +150,33 @@
   <section class="d-lg-none d-block">
     <div class="account-header-mobile">
       <span>❮</span>
-      <h5 class="header xs">Personal Information</h5>
+      <h5 class="header xs">Income and Asset Declaration</h5>
       <h5></h5>
     </div>
   </section>
 
-  <section class="account-personal">
+  <section class="account-income">
     <form action="">
       <div class="container container-fullwidth mt-3 mt-lg-0 p-0">
-        <div class="account-personal-card">
-          <div class="account-personal-card-title">
-            <p>Personal Details</p>
+        <div class="account-income-card">
+          <div class="account-income-card-title">
+            <p>Occupation Details</p>
           </div>
-          <div class="account-personal-card-body">
+          <div class="account-income-card-body">
             <div class="row mb-3">
               <div class="col-lg-6 col-12">
-                <label for="fullName" class="form-label">Full Name as per IC</label>
-                <input type="text" class="form-control" id="fullName" placeholder="Enter your name as per IC" aria-label="Full Name as per IC">
+                <label for="employmentStatus" class="form-label">Employment Status</label>
+                <select id="employmentStatus" class="form-select">
+                  <option selected>Select your employment status</option>
+                  <option>Government</option>
+                  <option>Self-Employed</option>
+                  <option>Employed</option>
+                  <option>Jobless</option>
+                </select>
               </div>
               <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-                <label for="nric" class="form-label">NRIC</label>
-                <input type="text" class="form-control" id="nric" placeholder="Enter your IC number" aria-label="NRIC">
-              </div>
-            </div>
-            <div>
-              <label for="personal-dropzone" class="form-label">Upload File</label>
-              <div class="row upload-file text-m text-center">
-                <div class="col-lg-4 d-lg-block d-none p-4">
-                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
-                    Drag and Drop your file to upload
-                  </div>
-                </div>
-                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
-                  <div class="upload-file-dummy">
-                    Or choose file from computer
-                  </div>
-                </div>
-                <div class="col-lg-4 d-lg-block d-none">
-                  <div class="upload-file-qr">
-                    <img src="./assets/images/qr.png" alt="qr">
-                  </div>
-                  Or upload your file by scanning the QR
-                </div>
-                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
-                  <div class="upload-file-dummy">
-                    Upload file
-                  </div>
-                </div>
+                <label for="nameEmployer" class="form-label">Name of Employer/Company</label>
+                <input type="text" class="form-control" id="nameEmployer" placeholder="Enter name of employer/company" aria-label="Name of Employer/Company">
               </div>
             </div>
           </div>
@@ -204,198 +184,201 @@
       </div>
 
       <div class="container container-fullwidth p-0">
-        <div class="account-personal-card">
-          <div class="account-personal-card-title">
-            <p>Residency Details</p>
+        <div class="account-income-card">
+          <div class="account-income-card-title">
+            <p>Financial Status</p>
           </div>
-          <div class="account-personal-card-body">
-            <div class="mb-3">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Enter your address">
+          <div class="account-income-card-body">
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="personalIncome" class="form-label">Your and Spouse Annual Personal Income</label>
+                <input type="text" class="form-control" id="personalIncome" placeholder="Enter annual personal income" aria-label="Enter annual personal income">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="netWorth" class="form-label">Your and Spouse Estimated net worth<a class="ms-1"><img class="mb-1" src="./assets/images/more-info.svg" alt="more-info"></a></label>
+                <select id="netWorth" class="form-select">
+                  <option selected>Select estimated net worth</option>
+                  <option>0-100</option>
+                  <option>100-10000</option>
+                  <option>10000-100000</option>
+                </select>
+              </div>
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Enter your address">
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="inputAddress3" placeholder="Enter your address">
-            </div>
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="country" class="form-label">Country</label>
-                <select id="country" class="form-select">
-                  <option selected>Malaysia</option>
-                  <option>...</option>
-                </select>
+              <label for="netWorth" class="form-label">Employment Status</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="employmentSalary" value="option1">
+                <label class="form-check-label" for="employmentSalary">
+                  <p>Employment salary</p>
+                </label>
               </div>
-              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-                <label for="nric" class="form-label">State</label>
-                <select id="nric" class="form-select">
-                  <option selected>Select your state</option>
-                  <option>...</option>
-                </select>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="businessIncome" value="option2">
+                <label class="form-check-label" for="businessIncome">
+                  <p>Business income</p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="investmentIncome" value="option3">
+                <label class="form-check-label" for="investmentIncome">
+                  <p>Investment income</p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="inheritedWealth" value="option4">
+                <label class="form-check-label" for="inheritedWealth">
+                  <p>Inherited wealth</p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="directors" value="option5">
+                <label class="form-check-label" for="directors">
+                  <p>Directorships</p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="savings" value="option5">
+                <label class="form-check-label" for="savings">
+                  <p>Savings</p>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                
+                <input class="form-check-input" type="radio" name="exampleRadios" id="others" value="option5">
+                <label class="form-check-label" for="others">
+                  <p>Others:</p>
+                </label>
+                <input type="text" class="form-others-specify" placeholder="Please specify">
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="postcode" class="form-label">Postcode</label>
-                <input type="text" class="form-control" id="postcode" placeholder="Enter your postcode">
-              </div>
-              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-                <label for="city" class="form-label">City</label>
-                <select id="city" class="form-select">
-                  <option selected>Select your city</option>
-                  <option>...</option>
-                </select>
-              </div>
-            </div>
+            
+            <!--Qualifying Criteria drozpone for Catogery A-B  -->
             <div>
-              <label for="residency-dropzone" class="form-label">Proof of Address (Utility Bill)</label>
-              <div class="row upload-file text-m text-center">
-                <div class="col-lg-4 d-lg-block d-none p-4">
-                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
-                    Drag and Drop your file to upload
+              <div class="mb-3">
+                <label for="finanicalStatus-dropzone" class="form-label">Last 3 months' pay slip</label>
+                <div class="row upload-file text-m text-center">
+                  <div class="col-lg-4 d-lg-block d-none p-4">
+                    <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                      Drag and Drop your file to upload
+                    </div>
+                  </div>
+                  <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                    <div class="upload-file-dummy">
+                      Or choose file from computer
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-lg-block d-none">
+                    <div class="upload-file-qr">
+                      <img src="./assets/images/qr.png" alt="qr">
+                    </div>
+                    Or upload your file by scanning the QR
+                  </div>
+                  <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                    <div class="upload-file-dummy">
+                      Upload file
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
-                  <div class="upload-file-dummy">
-                    Or choose file from computer
+              </div>
+              <div class="mb-3">
+                <label for="finanicalStatus-dropzone" class="form-label">Last 3 months' bank statement with salary credited</label>
+                <div class="row upload-file text-m text-center">
+                  <div class="col-lg-4 d-lg-block d-none p-4">
+                    <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                      Drag and Drop your file to upload
+                    </div>
+                  </div>
+                  <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                    <div class="upload-file-dummy">
+                      Or choose file from computer
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-lg-block d-none">
+                    <div class="upload-file-qr">
+                      <img src="./assets/images/qr.png" alt="qr">
+                    </div>
+                    Or upload your file by scanning the QR
+                  </div>
+                  <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                    <div class="upload-file-dummy">
+                      Upload file
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4 d-lg-block d-none">
-                  <div class="upload-file-qr">
-                    <img src="./assets/images/qr.png" alt="qr">
+              </div>
+              <div class="mb-3">
+                <label for="finanicalStatus-dropzone" class="form-label">Latest Form B/BE</label>
+                <div class="row upload-file text-m text-center">
+                  <div class="col-lg-4 d-lg-block d-none p-4">
+                    <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                      Drag and Drop your file to upload
+                    </div>
                   </div>
-                  Or upload your file by scanning the QR
-                </div>
-                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
-                  <div class="upload-file-dummy">
-                    Upload file
+                  <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                    <div class="upload-file-dummy">
+                      Or choose file from computer
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-lg-block d-none">
+                    <div class="upload-file-qr">
+                      <img src="./assets/images/qr.png" alt="qr">
+                    </div>
+                    Or upload your file by scanning the QR
+                  </div>
+                  <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                    <div class="upload-file-dummy">
+                      Upload file
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-        
+
+            <!--Qualifying Criteria drozpone for Catogery E  -->
+            <!-- <div>
+              <div class="mb-3">
+                <label for="finanicalStatus-dropzone" class="form-label">Document supporting applicant is a CEO/Director</label>
+                <div class="row upload-file text-m text-center">
+                  <div class="col-lg-4 d-lg-block d-none p-4">
+                    <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                      Drag and Drop your file to upload
+                    </div>
+                  </div>
+                  <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                    <div class="upload-file-dummy">
+                      Or choose file from computer
+                    </div>
+                  </div>
+                  <div class="col-lg-4 d-lg-block d-none">
+                    <div class="upload-file-qr">
+                      <img src="./assets/images/qr.png" alt="qr">
+                    </div>
+                    Or upload your file by scanning the QR
+                  </div>
+                  <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                    <div class="upload-file-dummy">
+                      Upload file
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
 
       <div class="container container-fullwidth p-0">
-        <div class="account-personal-card">
-          <div class="account-personal-card-title">
-            <p>Contacts</p>
+        <div class="account-income-card">
+          <div class="account-income-card-title">
+            <p>Spouse Information</p>
           </div>
-          <div class="account-personal-card-body">
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="mobile" class="form-label">Mobile</label>
-                <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile phone number">
-              </div>
-              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-                <label for="residentialNumber" class="form-label">Residential</label><span class="label-optional">(Optional)</span>
-                <input type="tel" class="form-control" id="residentialNumber" placeholder="Enter residential number">
-              </div>
+          <div class="account-income-card-body">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="emergencyCheck">
+              <label class="form-check-label" for="emergencyCheck">
+                Use Emergency Contact information
+              </label>
             </div>
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="officeNumber" class="form-label">Office</label><span class="label-optional">(Optional)</span>
-                <input type="text" class="form-control" id="officeNumber" placeholder="Enter office number">
-              </div>
-            </div>
-            <div>
-              <label for="contacts-dropzone" class="form-label">Mobile Phone Bill</label>
-              <div class="row upload-file text-m text-center">
-                <div class="col-lg-4 d-lg-block d-none p-4">
-                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
-                    Drag and Drop your file to upload
-                  </div>
-                </div>
-                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
-                  <div class="upload-file-dummy">
-                    Or choose file from computer
-                  </div>
-                </div>
-                <div class="col-lg-4 d-lg-block d-none">
-                  <div class="upload-file-qr">
-                    <img src="./assets/images/qr.png" alt="qr">
-                  </div>
-                  Or upload your file by scanning the QR
-                </div>
-                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
-                  <div class="upload-file-dummy">
-                    Upload file
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container container-fullwidth p-0">
-        <div class="account-personal-card">
-          <div class="account-personal-card-title">
-            <p>Bank Information</p>
-          </div>
-          <div class="account-personal-card-body">
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="bankName" class="form-label">Bank Name</label>
-                <select id="bankName" class="form-select">
-                  <option selected>Select your bank name</option>
-                  <option>Maybank</option>
-                  <option>CitiBank</option>
-                  <option>Public bank</option>
-                </select>
-              </div>
-              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
-                <label for="bankAccountName" class="form-label">Bank Account Name</label>
-                <input type="tel" class="form-control" id="bankAccountName" placeholder="Enter your bank account name">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-lg-6 col-12">
-                <label for="bankAccountNumber" class="form-label">Bank Account Number</label>
-                <input type="text" class="form-control" id="bankAccountNumber" placeholder="Enter your bank account number">
-              </div>
-            </div>
-            <div>
-              <label for="contacts-dropzone" class="form-label">Bank Statement (top part)</label>
-              <div class="row upload-file text-m text-center">
-                <div class="col-lg-4 d-lg-block d-none p-4">
-                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
-                    Drag and Drop your file to upload
-                  </div>
-                </div>
-                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
-                  <div class="upload-file-dummy">
-                    Or choose file from computer
-                  </div>
-                </div>
-                <div class="col-lg-4 d-lg-block d-none">
-                  <div class="upload-file-qr">
-                    <img src="./assets/images/qr.png" alt="qr">
-                  </div>
-                  Or upload your file by scanning the QR
-                </div>
-                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
-                  <div class="upload-file-dummy">
-                    Upload file
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container container-fullwidth p-0">
-        <div class="account-personal-card">
-          <div class="account-personal-card-title">
-            <p>My Emergency Contact Information<span class="label-optional">
-              (Optional)
-            </span></p>
-          </div>
-          <div class="account-personal-card-body">
             <div class="row mb-3">
               <div class="col-lg-6 col-12">
                 <label for="eFullName" class="form-label">Full Name as per IC</label>
@@ -426,9 +409,63 @@
                 <input type="text" class="form-control" id="eEmail" placeholder="Enter email address" >
               </div>
             </div>
+            
           </div>
         </div>
       </div>
+
+      <div class="container container-fullwidth p-0">
+        <div class="account-income-card">
+          <div class="account-income-card-title">
+            <p>CDS Information</p>
+          </div>
+          <div class="account-income-card-body">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="cdsCheck">
+              <label class="form-check-label" for="cdsCheck">
+                I don't have a CDS account
+              </label>
+            </div>
+            <div class="row mb-3">
+              <div class="col-lg-6 col-12">
+                <label for="cdsAccNo" class="form-label">CDS Account Number</label>
+                <input type="text" class="form-control" id="cdsAccNo" placeholder="Enter your preferred CDS account number">
+              </div>
+              <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+                <label for="cdsAccName" class="form-label">CDS Account Name</label>
+                <input type="text" class="form-control" id="cdsAccName" placeholder="Enter your CDS account namew" >
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="cds-dropzone" class="form-label">CDS Statement (top part)</label>
+              <div class="row upload-file text-m text-center">
+                <div class="col-lg-4 d-lg-block d-none p-4">
+                  <div class="upload-file-dropzone d-flex justify-content-center h-100 flex-column">
+                    Drag and Drop your file to upload
+                  </div>
+                </div>
+                <div class="col-lg-4 border-start border-end d-flex justify-content-center d-lg-block d-none p-lg-3 p-0">
+                  <div class="upload-file-dummy">
+                    Or choose file from computer
+                  </div>
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="upload-file-qr">
+                    <img src="./assets/images/qr.png" alt="qr">
+                  </div>
+                  Or upload your file by scanning the QR
+                </div>
+                <div class="col-lg-4 d-lg-none d-flex justify-content-center">
+                  <div class="upload-file-dummy">
+                    Upload file
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </form>
   </section>
@@ -439,19 +476,22 @@
     </div>
   </section>
 
-  <section class="account-review">
+  <section class="account-income-review">
     <div class="container container-fullwidth">
-      <div class="account-review-card d-flex flex-column ">
+      <div class="account-income-review-card d-flex flex-column ">
         <h4 class="header-s mb-3">
-          Your personal information submission is under review.
+          Your application has been submitted
         </h4>
-        <p>Continue to <a href="" class="link-blue">Qualifying Criteria.</a></p>
+        <p class="mb-4">Your information is currently being processed. You will receive an email from us within [?] working days. Thank you.</p>
+        <div>
+          <a href="" class="btn btn-blue">Go to Dashboard</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Declaration Modal -->
-  <div class="modal fade" id="declarationModal" tabindex="-1" aria-labelledby="declarationModalLabel" aria-hidden="true">
+  <div class="modal fade" id="declarationIncomeModal" tabindex="-1" aria-labelledby="declarationIncomeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -496,7 +536,7 @@
   </div>
 
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#declarationModal">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#declarationIncomeModal">
     Demo Declaration
   </button>
 

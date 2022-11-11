@@ -333,6 +333,11 @@ form{
     }
   }
 
+  .form-check-input:checked {
+    background-color: $t-black;
+    border-color: $t-black;
+  }
+
   .label-optional{
     font-size: 12px;
     line-height: 150%;
@@ -347,6 +352,13 @@ form{
     padding: 12px 16px 12px 16px;
     border: 1px solid #A9A9A9;
     border-radius: 12px;
+  }
+
+  .form-others-specify{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #1f1f1f;
   }
 
   .input-group-text{

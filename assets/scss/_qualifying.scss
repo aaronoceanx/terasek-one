@@ -1,0 +1,28 @@
+.account{
+
+  &-qualify{
+
+    @media screen and (max-width: 575px){
+      margin-top: 20px;
+    }
+    &-card{
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      margin: 40px auto;
+      background:#FFFFFF;
+      max-width: 892px;
+      padding: 36px 24px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding:20px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

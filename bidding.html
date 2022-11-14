@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <title>My Account</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light pt-3">
+    <div class="container">
+      <a class="navbar-brand" href="./homepage.html"><img class="image-100" src="./assets/images/logo.png" alt=""></a>
+      <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <div class="d-lg-flex align-items-center d-none">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./product-list.html">Our Offering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="./about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">Refer & Earn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-m" href="#">Login</a>
+            </li>
+          </ul>
+          <a href="" class="btn btn-blue">Register</a>
+        </div> -->
+      <!--For logged in users-->
+      <div class="d-lg-flex d-none">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-m" href="#">Make a Bid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-m" href="#">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu dropdown-menu-start">
+              <li><a class="dropdown-item" href="#">My Account</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar_mobile">
+        <div class=" container pt-3">
+          <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt=""></a>
+            <button class="navbar-toggler bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="my-1 mx-2 close"><img src="./assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+          <!-- <div>
+            <ul class="navbar-nav my-5 ps-3">
+              <li class="nav-item">
+                <a href="./homepage.html" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./product-list.html" class="mobile-nav-link">Our Offerings</a>
+              </li>
+              <li class="nav-item">
+                <a href="./about-us.html" class="mobile-nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Refer & Earn</a>
+              </li>
+            </ul>
+            <div class="ps-3">
+              <a href="" class="btn btn-blue">Register</a>
+            </div>
+          </div> -->
+          <!--For logged-in users-->
+          <div>
+            <ul class="navbar-nav my-5 ps-3">
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">Make a bid</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="mobile-nav-link">FAQ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mobile-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User
+                </a>
+                <ul class="dropdown-menu dropdown-menu-start">
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+  </nav>
+
+  <!--Header for Mobile only-->
+  <!-- <section class="d-lg-none d-block">
+    <div class="account-header-mobile">
+      <span>❮</span>
+      <h5 class="header xs">Personal Information</h5>
+      <h5></h5>
+    </div>
+  </section> -->
+  
+  <div class="bidding-header d-flex justify-content-center position-relative">
+    <div class="container d-flex justify-content-center position-relative">
+      <div class="bidding-back">
+        <a href="">❮<span class="text-m d-lg-inline d-none ms-2">
+          Back
+        </span></a>
+        
+      </div>
+      <div>
+        <h5 class="header-xs text-center">
+          Place a bid
+        </h5>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <section class="bidding-company">
+    <div class="container container-fullwidth p-0 border-top-0 border-bottom-0">
+      <div class="bidding-company-card">
+        <div class="bidding-company-card-title d-md-block d-none">
+          <div class="row">
+            <div class="col-2">
+              <p class="fw-bold">
+                Company Name
+              </p>
+            </div>
+            <div class="col-4">
+              <p class="fw-bold">
+                Description
+              </p>
+            </div>
+            <div class="col-2">
+              <p class="fw-bold">
+                Status
+              </p>
+            </div>
+            <div class="col-2">
+              <p class="fw-bold">
+                Payment Status
+              </p>
+            </div>
+            <div class="col-2">
+              <p class="fw-bold">
+                Indicative Bid Price Range (RM)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bidding-company-card-body">
+          <div class="container container-fullwidth p-0 ">
+            <div class="bidding-company-card-body-section">
+              <div class="bidding-company-card-body-section-mobile d-md-none d-flex px-4 ">
+                <p class="fw-bold">DXN Holdings Berhad</p>
+              </div>
+              <div class="row p-md-0 p-4">
+                <div class="col-md-2 col-4">
+                  <img class="bidding-company-card-body-section-image" src="./assets/images/dxn.png" alt="">
+                  <p class="d-md-block d-none">DXN Holdings Berhad</p>
+                </div>
+                <div class="col-md-4 col-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus laoreet massa, in imperdiet mi pulvinar ac. Nam commodo massa vitae leo dictum aliquet. Duis eu iaculis augue. Donec consequat facilisis mi, sed aliquam neque elementum vel.</p>
+                </div>
+                <div class="col-md-2 col-8 ms-md-0 ms-auto mt-md-0 mb-md-0 mt-3 mb-3">
+                  <div>
+                    <p>Bid Closing Soon</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-8 ms-md-0 ms-auto mx-md-0 mb-3">
+                  <div class="label label-grey">Unpaid</div>
+                </div>
+                <div class="col-md-2 col-8 ms-md-0 ms-auto">
+                  <p>1.10 - 1.30 per share</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bidding-bid">
+    <div class="container container-fullwidth p-0 border-top-0 border-bottom-0">
+      <div class="bidding-bid-card">
+        <div class="container container-fullwidth p-0">
+          <div class="bidding-bid-card-section top">
+            <div class="bidding-bid-card-section-mobile d-md-none d-flex px-4 ">
+              <h6 class="header-2xs">
+                Make Your Bid
+              </h6>
+            </div>
+            <form action="">
+              <div class="px-4 mt-4 bidding-form">
+                <h4 class="header-s d-md-block d-none bidding-bid-card-section-title">
+                  1. Make Your Bid
+                </h4>
+                <div class="row mb-5">
+                  <div class="col-md-2 col-4">
+                    Bid Price (RM)
+                  </div>
+                  <div class="col-lg-5 col-8">
+                    <div>
+                      <div class="form-check form-check-inline d-flex align-items-center mb-3 me-0">
+                        <input class="form-check-input me-md-2 me-1 " type="radio" name="exampleRadios" id="others" value="option5">
+                        <input type="text" class="form-control d-inline-block w-auto me-2 pershare-input" placeholder="enter amount">
+                        <label class="form-check-label" for="others">
+                          <p>per share</p>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="savings" value="option5">
+                        <label class="form-check-label" for="savings">
+                          <p>At Strike Price</p>
+                        </label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-2 col-4">
+                    Bid Value (RM<br>/Share)
+                  </div>
+                  <div class="col-md-2 col-8">
+                    <input type="number" class="form-control" id="eMobileNumber" placeholder="50,000" >
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-2 col-4">
+                    Bid Quantity
+                  </div>
+                  <div class="col-md-4 col-8">
+                    <p>801</p>
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <div class="col-md-2 col-4">
+                    Fees & Charges (RM)
+                  </div>
+                </div>
+                <div class="row ps-3">
+                  <div class="col-md-3 col-4">
+                    Administrative fees
+                  </div>
+                  <div class="col-md-2 col-8">
+                    10.00
+                  </div>
+                </div>
+                <div class="row ps-3 mb-5">
+                  <div class="col-md-3 col-4">
+                    Tax
+                  </div>
+                  <div class="col-md-2 col-8">
+                    25.87
+                  </div>
+                </div>
+                <div class="row justify-content-md-end">
+                  <div class="col-md-2 col-4 fw-bold text-md-end text-start">
+                    Total (RM)
+                  </div>
+                  <div class="col-md-2 col-4 fw-bold text-md-end text-start">
+                    300,000.00
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+        </div>
+        <div class="container container-fullwidth p-0">
+          <div class="bidding-bid-card-section">
+            <div class="bidding-bid-card-section-mobile d-md-none d-flex px-4 ">
+              <h6 class="header-2xs">
+                Payment Method
+              </h6>
+            </div>
+            <form action="">
+              <div class="px-4 mt-4 bidding-form">
+                <h4 class="header-s d-md-block d-none bidding-bid-card-section-title">
+                  2. Payment Method
+                </h4>
+                <div class="row mb-md-4 mb-3">
+                  <div class="col-md-5 col-12">
+                    <div class="d-flex">
+                      <input type="checkbox" name="agree" class="form-check-input me-2" id="declarationCheck" />
+                      <p>Online transfer<a class="ms-1"><img class="mb-1" src="./assets/images/more-info.svg" alt="more-info"></a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-12">
+                    <div class="row">
+                      <div class="col-md-6 col-12 my-md-0 my-2">
+                        <select id="country" class="form-select">
+                          <option selected>choose bank</option>
+                          <option>Maybank</option>
+                          <option>Public bank</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-12 my-md-0 my-2">
+                        <input type="text" class="form-control" id="eResidentialNumber" placeholder="50,000.00" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-md-4 mb-3">
+                  <div class="col-md-5 col-12">
+                    <div class="d-flex">
+                      <input type="checkbox" name="agree" class="form-check-input me-2" id="declarationCheck" />
+                      <p>Telegraphic Transfer (TT/RENTAS)</p>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-12">
+                    <div class="row justify-content-end">
+                      <div class="col-md-6 col-12 my-md-0 my-2">
+                        <input type="text" class="form-control" id="eResidentialNumber" placeholder="50,000.00" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5 col-12">
+                    <div class="d-flex">
+                      <input type="checkbox" name="agree" class="form-check-input me-2" id="declarationCheck" />
+                      <p>Cheque deposit<a class="ms-1"><img class="mb-1" src="./assets/images/more-info.svg" alt="more-info"></a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-12">
+                    <div class="row">
+                      <div class="col-md-6 col-12 my-md-0 my-2">
+                        <input type="text" class="form-control" id="eResidentialNumber" placeholder="enter your cheque number" >
+                      </div>
+                      <div class="col-md-6 col-12 my-md-0 my-2">
+                        <input type="text" class="form-control" id="eResidentialNumber" placeholder="enter your amount" >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-md-end mt-4 mb-3">
+                  <div class="col-md-3 col-6 fw-bold text-md-end text-start">
+                    Payment Total (RM)
+                  </div>
+                  <div class="col-md-2 col-6 fw-bold text-md-end text-start">
+                    100,000.00
+                  </div>
+                </div>
+                <div class="row justify-content-md-end">
+                  <div class="col-md-3 col-6 fw-bold text-md-end text-start">
+                    Payment Balance (RM)
+                  </div>
+                  <div class="col-md-2 col-6 fw-bold text-md-end text-start">
+                    200,000.00
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="text-end m-auto bidding-bid-button px-md-0 px-4 pb-3">
+        <a href="" class="btn btn-blue mobile-w-100">Proceed</a>
+      </div>
+    </div>
+    
+    
+
+ 
+
+  <section class="eoi-disclaimer">
+    <div class="container">
+      <div class="eoi-disclaimer-card">
+        <p class="fw-bold mb-2">
+          Risk Disclaimer
+        </p>
+        <p class="small">
+          All investments carry risks. You may lose your entire investment, and you should be in a position to bear this risk without undue hardship. 
+          <br><br>
+          Even if the company is successful, the value of your investment and any return on the investment could be reduced if the company issues more shares. Your investment may not be liquid. This means you may not be able to sell your shares quickly or at all if you need the money or decide that this investment is not right for you. 
+          <br><br>
+          Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.
+        </p>
+      </div>
+      <div class="eoi-disclaimer-card">
+        <p class="fw-bold mb-2">
+          Special Risk Disclaimer for Registration of Interest
+        </p>
+        <p class="small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus laoreet massa, in imperdiet mi pulvinar ac. Nam commodo massa vitae leo dictum aliquet. Duis eu iaculis augue. Donec consequat facilisis mi, sed aliquam neque elementum vel.
+        </p>
+      </div>
+  
+      <div>
+        <a href="" class="ms-xl-5"><u>Bidding FAQ</u></a>
+      </div>
+    </div>
+
+  </section>
+
+ 
+
+  <!-- <section class="account-transaction">
+    <div class="container container-fullwidth">
+      <div class="account-transaction-status d-flex justify-content-center flex-column align-items-center">
+        <img class="mb-4" src="./assets/images/success.png" alt="success">
+        <h4 class="header-s mb-3">Online Transaction Successful</h4>
+        <a href="" class="btn btn-blue">Proceed</a>
+      </div>
+    </div>
+    <div class="container container-fullwidth">
+      <div class="account-transaction-status d-flex justify-content-center flex-column align-items-center">
+        <img class="mb-4" src="./assets/images/failed.png" alt="success">
+        <h4 class="header-s mb-3">Transaction unsuccessful</h4>
+        <a href="" class="btn btn-blue">Retry</a>
+      </div>
+    </div>
+  </section> -->
+
+
+  <script src="./assets/js/script.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

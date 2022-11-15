@@ -124,79 +124,158 @@
     </div>
   </nav>
 
-  <!--Header for Mobile only-->
-  <!-- <section class="d-lg-none d-block">
-    <div class="account-header-mobile">
-      <span>❮</span>
-      <h5 class="header xs">Personal Information</h5>
-      <h5></h5>
-    </div>
-  </section> -->
-  
-  <div class="account-payment-header d-flex justify-content-center position-relative">
+  <div class="bidding-header d-flex justify-content-center position-relative">
     <div class="container d-flex justify-content-center position-relative">
-      <div class="account-payment-back">
+      <div class="bidding-back">
         <a href="">❮<span class="text-m d-lg-inline d-none ms-2">
-          Back to Personal Information
+          Back
         </span></a>
-        
       </div>
       <div>
         <h5 class="header-xs text-center">
-          Account Opening Transaction
+          Bid Details
         </h5>
       </div>
       <div></div>
     </div>
   </div>
 
-  <section class="account-payment">
+  <section class="bidding-details-complete">
     <div class="container container-fullwidth p-0">
-      <div class="account-payment-card">
-        <div class="account-payment-card-title">
-          <p>Payment Method</p>
+      <div class="bidding-details-complete-card">
+        <h5 class="header-s d-lg-block d-none">
+          Complete your bid
+        </h5>
+        <div class="bidding-details-complete-card-mobile d-lg-none d-block">
+          <h6 class="header-2xs">
+            Complete your bid
+          </h6>
         </div>
-        <div class="account-payment-card-body">
-          <span class="text-s">
-            Online Banking
-          </span>
-          <form action="">
-            <select id="country" class="form-select">
-              <option selected>Select one bank</option>
-              <option>Maybank</option>
-              <option>Public bank</option>
-            </select>
-          </form>
-          <div >
-            <div class="mt-5">
-              <div class="row text-end d-flex justify-content-end mb-3">
-                <div class="col-lg-3 col-5">
-                  <p>Subtotal:</p>
-                </div>
-                <div class="col-lg-3 col-5">
-                  <p>RM10.00</p>
-                </div>
-              </div>
-              <div class="row text-end d-flex justify-content-end">
-                <div class="col-lg-3 col-5">
-                  <p class="text-bold">Total:</p>
-                </div>
-                <div class="col-lg-3 col-5">
-                  <h4 class="header-s">RM10.00</h4>
-                </div>
-              </div>
-              <div class="text-end mt-3"><a href="" class="btn btn-blue">Proceed</a></div>
+        <p class="px-sm-4 px-lg-0 px-3 mt-3 mt-lg-0">Your bid request has been stored in our system. Please follow the remaining step to secure your bid placement.</p>
+        <!--For Desktop-->
+        <div class="row d-lg-flex d-none bidding-details-complete-card-step justify-content-center">
+          <div class="col-5 d-flex flex-column align-items-center position-relative">
+            <div class="step-no">
+              <h2 class="header-l mt-1">1</h2>
             </div>
+            <p>Proof of Purchase</p>
+              <p class="text-grey text-center px-3">Send your proof of Telegraphic Transfer and/or cheque deposit to the WhatsApp number +60123456789.
+            </p>
+            <div class="step-line"></div>
           </div>
-          
+          <div class="col-5 d-flex flex-column align-items-center">
+            <div class="step-no">
+              <h2 class="header-l mt-1">2</h2>
+            </div>
+            <p>Confirm</p>
+            <p class="text-grey text-center px-3">We will notify you via email once your bid placement is successful.</p>
+          </div>
+        </div>
+        <!--For Mobile-->
+        <div class="referral-mobile-step ps-sm-5 ps-4 my-4 d-lg-none d-block">
+          <ul class="list-group vertical-steps">
+            <li class="list-group-item">
+              <div class="ps-5">
+                <p>Proof of Purchase</p>
+                <p class="text-grey pe-2">Send your proof of Telegraphic Transfer and/or cheque deposit to the WhatsApp number +60123456789.</p>
+              </div>
+            </li>
+            <li class="list-group-item ">
+              <div class="ps-5">
+                <p>Confirm</p>
+                <p class="text-grey pe-2">We will notify you via email once your bid placement is successful.</p>
+              </div>
+            </li>
+          </ul>  
         </div>
       </div>
-      
     </div>
+  </section>
   
+  <section class="bidding-details-value">
+    <div class="container container-fullwidth p-0">
+      <div class="bidding-details-value-card">
+        <div class="d-flex ps-md-4 ps-2">
+          <img src="./assets/images/dxn.png" alt="dxn">
+          <div class="ps-3">
+            <h5 class="header-s mb-2">
+              DXN Holdings Berhad
+            </h5>
+            <div class="label label-orange">
+              Partially paid
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered my-2">
+          <tbody>
+            <tr>
+              <th class="col-9">Bid Value </th>
+              <td class="col-3">RM299,040.00</td>
+            </tr>
+            <tr>
+              <th class="col-9">Fees & Charges</th>
+              <td class="col-3">RM60.00</td>
+            </tr>
+            <tr>
+              <th class="col-9">Bid Total</th>
+              <td class="col-3 bid-total">RM300,000.00</td>
+            </tr>
+            <tr>
+              <th class="col-9">Paid Total</th>
+              <td class="col-3">RM50,000.00</td>
+            </tr>
+            <tr>
+              <th class="col-9">Balance Due</th>
+              <td class="col-3">RM250,000.00</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <div class="text-end pe-3 pt-2">
+          <a href="" class="btn btn-blue">Pay balance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+    
+
+ 
+
+  <section class="eoi-disclaimer">
+    <div class="container">
+      <div class="eoi-disclaimer-card">
+        <p class="fw-bold mb-2">
+          Risk Disclaimer
+        </p>
+        <p class="small">
+          All investments carry risks. You may lose your entire investment, and you should be in a position to bear this risk without undue hardship. 
+          <br><br>
+          Even if the company is successful, the value of your investment and any return on the investment could be reduced if the company issues more shares. Your investment may not be liquid. This means you may not be able to sell your shares quickly or at all if you need the money or decide that this investment is not right for you. 
+          <br><br>
+          Ask questions, read all information given carefully, and seek independent financial advice before committing yourself to any investment.
+        </p>
+      </div>
+      <div class="eoi-disclaimer-card">
+        <p class="fw-bold mb-2">
+          Special Risk Disclaimer for Registration of Interest
+        </p>
+        <p class="small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus laoreet massa, in imperdiet mi pulvinar ac. Nam commodo massa vitae leo dictum aliquet. Duis eu iaculis augue. Donec consequat facilisis mi, sed aliquam neque elementum vel.
+        </p>
+      </div>
+  
+      <div>
+        <a href="" class="ms-xl-5"><u>Bidding FAQ</u></a>
+      </div>
+    </div>
+
   </section>
 
-  <section class="account-transaction">
+ 
+
+  <!-- <section class="account-transaction">
     <div class="container container-fullwidth">
       <div class="account-transaction-status d-flex justify-content-center flex-column align-items-center">
         <img class="mb-4" src="./assets/images/success.png" alt="success">
@@ -211,7 +290,7 @@
         <a href="" class="btn btn-blue">Retry</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <script src="./assets/js/script.js"></script>

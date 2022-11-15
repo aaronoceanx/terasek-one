@@ -1,0 +1,288 @@
+.bidding{
+  
+  &-header{
+    padding: 23px 18px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #dedede;
+  }
+
+  &-back{
+    position: absolute;
+    left: 0;
+  }
+
+
+  &-company{
+    
+    &-card{
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      margin: 40px auto;
+      background:#FFFFFF;
+      max-width: 1200px;
+
+      @media screen and (max-width: 767px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+      
+      &-title{
+        padding: 14px 19px 14px 18px;
+        border-bottom:1px solid #DEDEDE;
+
+        @media screen and (max-width: 767px){
+          padding: 12px 0 12px 24px;
+          border-bottom:none;
+        }
+      }
+      &-body{
+        
+        background: #F7F7F7;
+        border-bottom-left-radius:12px ;
+        border-bottom-right-radius:12px ;
+        overflow: hidden;
+
+        &-section{
+          
+          padding: 18px 19px 8px 19px ;
+          background: #FFFFFF;
+
+          @media screen and (max-width: 767px){
+            margin-bottom: 16px;
+            padding: 0px;
+            border-bottom:none;
+          }
+
+          &-mobile{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+            border-bottom:1px solid #DEDEDE;
+          }
+
+          &-image{
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  &-bid{
+
+    
+    
+    &-card{
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      margin: 40px auto;
+      background: #F7F7F7;
+      max-width: 1200px;
+      overflow: hidden;
+
+      @media screen and (max-width: 767px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+
+
+      &-section{
+        padding: 32px 16px ;
+        background: #FFFFFF;
+
+        &-mobile{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0px;
+          border-bottom:1px solid #DEDEDE;
+        }
+
+        &.top{
+          border-bottom: 1px solid #dedede;
+
+          @media screen and (max-width: 767px){
+          
+            border-bottom:none;
+          }
+        }
+
+        &-title{
+          margin-bottom: 60px;
+        }
+  
+        @media screen and (max-width: 767px){
+          margin-bottom: 16px;
+          padding:0px;
+          border-bottom:none;
+        }
+        
+        
+      }
+    }  
+
+    &-button{
+      max-width: 1200px;
+    }
+  
+  }
+
+  &-form{
+    @media screen and (max-width: 767px){
+      font-size: 14px;
+    }
+
+    .pershare-input{
+      @media screen and (max-width: 520px){
+        width: 167px !important;
+        padding: 12px 8px;;
+      }
+      @media screen and (max-width: 420px){
+        width: 140px !important;
+      }
+      @media screen and (max-width: 400px){
+        width: 120px !important;
+      }
+     
+    }
+  }
+
+  &-details-complete{
+    padding-top: 40px;
+    @media screen and (max-width: 575px){
+      padding: 0;
+    }
+    &-card{
+      padding: 32px 32px 48px 32px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
+      border-radius: 12px;
+      margin-bottom: 36px;
+
+      @media screen and (max-width: 991px){
+        padding: 0px 0px 32px 0px;
+      }
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+
+      &-mobile{
+        padding: 12px 20px;
+        border-bottom:1px solid #dedede;
+      }
+
+      &-step{
+        margin-top: 32px;
+
+        .step-no{
+          border: 8px solid #F9EBE8;
+          color: #DC3545;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+
+        .step-line {
+          height: 8px;
+          width: 388px;
+          background-color: #F9EBE8;
+          position: absolute;
+          left: 261px;
+          top: 36px;
+          @media screen and (min-width: 1400px){
+            width: 455px;
+            left: 306px;
+            top: 36px;
+          }
+          @media screen and (max-width: 1199px){
+            width: 310px;
+            left: 223px;
+            top: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  &-details-value{
+
+    &-card{
+      padding: 18px 0px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
+      border-radius: 12px;
+      margin-bottom: 36px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 18px 0px;
+        margin: 0 auto;
+      }
+
+      img{
+        width: 80px;
+        height: 80px;
+      }
+
+      table{
+        th{
+          font-size: 12px;
+          line-height: 150%;
+          color: #686868;
+          text-align: end;
+          @media screen and (max-width: 575px){
+            font-size: 9px;
+          }
+        }
+        td{
+          font-size: 16px;
+          line-height: 150%;
+          color: #000000;
+          text-align: end;
+          @media screen and (max-width: 575px){
+            font-size: 14px;
+          }
+
+          &.bid-total{
+            font-size: 24px;
+            line-height: 130%;
+            color: #FF4316;
+            @media screen and (max-width: 991px){
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  
+    
+
+}

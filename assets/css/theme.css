@@ -14,7 +14,6 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
-  border: 0;
   outline: 0;
   font-weight: inherit;
   font-style: inherit;
@@ -1876,5 +1875,358 @@ form .input-group-text {
     margin-bottom: 0;
     padding: 36px 24px;
     margin: 0 auto;
+  }
+}
+
+.eoi-hero-back {
+  position: absolute;
+  top: 26px;
+}
+.eoi-body-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  max-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.eoi-body-card-title {
+  padding: 14px 19px 14px 18px;
+  border-bottom: 1px solid #DEDEDE;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-title {
+    padding: 12px 0 12px 24px;
+    border-bottom: none;
+  }
+}
+.eoi-body-card-body {
+  background: #F7F7F7;
+}
+.eoi-body-card-body-section {
+  border-bottom: 1px solid #DEDEDE;
+  padding: 18px 19px 8px 19px;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-body-section {
+    margin-bottom: 16px;
+    padding: 0px;
+    border-bottom: none;
+  }
+}
+.eoi-body-card-body-section-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.eoi-body-card-body-section-image {
+  width: 80px;
+  height: 80px;
+}
+.eoi-body-card-body-section-del {
+  border: none;
+  background: transparent;
+}
+.eoi-body-card-body-section-indicative-width {
+  width: 192px;
+}
+@media screen and (max-width: 991px) {
+  .eoi-body-card-body-section-indicative-width {
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .eoi-body-card-body-section-indicative-width {
+    width: 100%;
+  }
+}
+.eoi-disclaimer {
+  padding-bottom: 160px;
+}
+@media screen and (max-width: 767px) {
+  .eoi-disclaimer {
+    padding-bottom: 32px;
+  }
+}
+.eoi-disclaimer-card {
+  background: #EEF3FF;
+  border: 1px solid #DEDEDE;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 16px auto;
+}
+
+.bidding-header {
+  padding: 23px 18px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #dedede;
+}
+.bidding-back {
+  position: absolute;
+  left: 0;
+}
+.bidding-company-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #FFFFFF;
+  max-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  .bidding-company-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.bidding-company-card-title {
+  padding: 14px 19px 14px 18px;
+  border-bottom: 1px solid #DEDEDE;
+}
+@media screen and (max-width: 767px) {
+  .bidding-company-card-title {
+    padding: 12px 0 12px 24px;
+    border-bottom: none;
+  }
+}
+.bidding-company-card-body {
+  background: #F7F7F7;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow: hidden;
+}
+.bidding-company-card-body-section {
+  padding: 18px 19px 8px 19px;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .bidding-company-card-body-section {
+    margin-bottom: 16px;
+    padding: 0px;
+    border-bottom: none;
+  }
+}
+.bidding-company-card-body-section-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.bidding-company-card-body-section-image {
+  width: 80px;
+  height: 80px;
+}
+.bidding-bid-card {
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #F7F7F7;
+  max-width: 1200px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .bidding-bid-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.bidding-bid-card-section {
+  padding: 32px 16px;
+  background: #FFFFFF;
+}
+.bidding-bid-card-section-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.bidding-bid-card-section.top {
+  border-bottom: 1px solid #dedede;
+}
+@media screen and (max-width: 767px) {
+  .bidding-bid-card-section.top {
+    border-bottom: none;
+  }
+}
+.bidding-bid-card-section-title {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .bidding-bid-card-section {
+    margin-bottom: 16px;
+    padding: 0px;
+    border-bottom: none;
+  }
+}
+.bidding-bid-button {
+  max-width: 1200px;
+}
+@media screen and (max-width: 767px) {
+  .bidding-form {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .bidding-form .pershare-input {
+    width: 167px !important;
+    padding: 12px 8px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bidding-form .pershare-input {
+    width: 140px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bidding-form .pershare-input {
+    width: 120px !important;
+  }
+}
+.bidding-details-complete {
+  padding-top: 40px;
+}
+@media screen and (max-width: 575px) {
+  .bidding-details-complete {
+    padding: 0;
+  }
+}
+.bidding-details-complete-card {
+  padding: 32px 32px 48px 32px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 991px) {
+  .bidding-details-complete-card {
+    padding: 0px 0px 32px 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .bidding-details-complete-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px 3px;
+    margin: 0 auto;
+  }
+}
+.bidding-details-complete-card-mobile {
+  padding: 12px 20px;
+  border-bottom: 1px solid #dedede;
+}
+.bidding-details-complete-card-step {
+  margin-top: 32px;
+}
+.bidding-details-complete-card-step .step-no {
+  border: 8px solid #F9EBE8;
+  color: #DC3545;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.bidding-details-complete-card-step .step-line {
+  height: 8px;
+  width: 388px;
+  background-color: #F9EBE8;
+  position: absolute;
+  left: 261px;
+  top: 36px;
+}
+@media screen and (min-width: 1400px) {
+  .bidding-details-complete-card-step .step-line {
+    width: 455px;
+    left: 306px;
+    top: 36px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .bidding-details-complete-card-step .step-line {
+    width: 310px;
+    left: 223px;
+    top: 36px;
+  }
+}
+.bidding-details-value-card {
+  padding: 18px 0px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 575px) {
+  .bidding-details-value-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 18px 0px;
+    margin: 0 auto;
+  }
+}
+.bidding-details-value-card img {
+  width: 80px;
+  height: 80px;
+}
+.bidding-details-value-card table th {
+  font-size: 12px;
+  line-height: 150%;
+  color: #686868;
+  text-align: end;
+}
+@media screen and (max-width: 575px) {
+  .bidding-details-value-card table th {
+    font-size: 9px;
+  }
+}
+.bidding-details-value-card table td {
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  text-align: end;
+}
+@media screen and (max-width: 575px) {
+  .bidding-details-value-card table td {
+    font-size: 14px;
+  }
+}
+.bidding-details-value-card table td.bid-total {
+  font-size: 24px;
+  line-height: 130%;
+  color: #FF4316;
+}
+@media screen and (max-width: 991px) {
+  .bidding-details-value-card table td.bid-total {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=theme.css.map */

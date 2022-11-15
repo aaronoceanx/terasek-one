@@ -137,9 +137,6 @@
       max-width: 1200px;
     }
   
-    
-
-
   }
 
   &-form{
@@ -160,6 +157,130 @@
       }
      
     }
+  }
+
+  &-details-complete{
+    padding-top: 40px;
+    @media screen and (max-width: 575px){
+      padding: 0;
+    }
+    &-card{
+      padding: 32px 32px 48px 32px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
+      border-radius: 12px;
+      margin-bottom: 36px;
+
+      @media screen and (max-width: 991px){
+        padding: 0px 0px 32px 0px;
+      }
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 0px 3px;
+        margin: 0 auto;
+      }
+
+      &-mobile{
+        padding: 12px 20px;
+        border-bottom:1px solid #dedede;
+      }
+
+      &-step{
+        margin-top: 32px;
+
+        .step-no{
+          border: 8px solid #F9EBE8;
+          color: #DC3545;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+
+        .step-line {
+          height: 8px;
+          width: 388px;
+          background-color: #F9EBE8;
+          position: absolute;
+          left: 261px;
+          top: 36px;
+          @media screen and (min-width: 1400px){
+            width: 455px;
+            left: 306px;
+            top: 36px;
+          }
+          @media screen and (max-width: 1199px){
+            width: 310px;
+            left: 223px;
+            top: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  &-details-value{
+
+    &-card{
+      padding: 18px 0px;
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
+      border-radius: 12px;
+      margin-bottom: 36px;
+
+      @media screen and (max-width: 575px){
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 18px 0px;
+        margin: 0 auto;
+      }
+
+      img{
+        width: 80px;
+        height: 80px;
+      }
+
+      table{
+        th{
+          font-size: 12px;
+          line-height: 150%;
+          color: #686868;
+          text-align: end;
+          @media screen and (max-width: 575px){
+            font-size: 9px;
+          }
+        }
+        td{
+          font-size: 16px;
+          line-height: 150%;
+          color: #000000;
+          text-align: end;
+          @media screen and (max-width: 575px){
+            font-size: 14px;
+          }
+
+          &.bid-total{
+            font-size: 24px;
+            line-height: 130%;
+            color: #FF4316;
+            @media screen and (max-width: 991px){
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+    }
+
   }
   
     

@@ -468,13 +468,18 @@ form .input-group-text {
 .accordion-item {
   margin-bottom: 24px;
   border: 1px solid #DEDEDE;
-  border-radius: 12px;
+  border-radius: 12px !important;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 575px) {
   .accordion-item {
     margin-bottom: 8px;
   }
+}
+
+.accordion-flush .accordion-item {
+  border-right: 1px solid #DEDEDE;
+  border-left: 1px solid #DEDEDE;
 }
 
 .accordion-flush .accordion-item:first-child {
@@ -649,6 +654,7 @@ form .input-group-text {
 
 .mobile-footer {
   background: #152136;
+  padding-top: 20px;
 }
 .mobile-footer-nav {
   border-top: 1px solid #ffffff;
@@ -735,6 +741,9 @@ form .input-group-text {
     margin-top: 37px;
   }
 }
+.home-refer .mobile-refer-slider-content {
+  margin-top: 72px;
+}
 .home-refer .carousel-height {
   height: 33.33%;
 }
@@ -758,7 +767,7 @@ form .input-group-text {
   opacity: 1;
 }
 .home-refer .refer-mobile-carousel .carousel-indicators {
-  margin-bottom: -3rem;
+  bottom: 195px;
 }
 .home-refer .refer-mobile-carousel .carousel-indicators [data-bs-target] {
   height: 8px;
@@ -775,19 +784,27 @@ form .input-group-text {
   }
 }
 .home-about-content {
-  padding: 0 140px;
+  padding: 0 0 0 140px;
+}
+.home-about-content.right {
+  padding: 0 140px 0 0;
 }
 @media screen and (max-width: 1199px) {
-  .home-about-content {
-    padding: 0 70px;
+  .home-about-content.right {
+    padding: 0 70px 0 0;
   }
 }
 @media screen and (max-width: 991px) {
-  .home-about-content {
-    padding: 0;
+  .home-about-content.right {
+    padding: 0 10px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1199px) {
+  .home-about-content {
+    padding: 0 0 0 70px;
+  }
+}
+@media screen and (max-width: 991px) {
   .home-about-content {
     padding: 0 10px;
   }
@@ -859,7 +876,7 @@ form .input-group-text {
 }
 @media screen and (max-width: 575px) {
   .about-wedo {
-    padding: 40px;
+    padding: 20px;
   }
 }
 .about-different {
@@ -867,7 +884,7 @@ form .input-group-text {
 }
 @media screen and (max-width: 575px) {
   .about-different {
-    padding: 40px;
+    padding: 20px;
   }
 }
 .about-custody {
@@ -916,6 +933,11 @@ form .input-group-text {
   width: 170px;
   height: 170px;
   border-radius: 8px;
+}
+@media screen and (max-width: 575px) {
+  .about-team-card-img {
+    margin: auto;
+  }
 }
 .about-contact {
   padding: 80px 0;
@@ -1049,16 +1071,16 @@ form .input-group-text {
   padding: 30px 0;
 }
 .register-success-button {
-  padding: 0px 183px;
+  padding: 0px 180px;
 }
 @media screen and (max-width: 991px) {
   .register-success-button {
-    padding: 0 120px;
+    padding: 0 148px;
   }
 }
 @media screen and (max-width: 575px) {
   .register-success-button {
-    padding: 0 24px;
+    padding: 0 65px;
   }
 }
 

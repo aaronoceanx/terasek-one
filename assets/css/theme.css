@@ -43,6 +43,9 @@ body {
 .text-grey {
   color: #686868;
 }
+.text-grey1 {
+  color: #a9a9a9;
+}
 .text-white {
   color: #ffffff;
 }
@@ -966,16 +969,16 @@ form .input-group-text {
   }
 }
 .faq-hero-search-input {
-  border-radius: 40px;
+  border-radius: 40px !important;
   font-size: 14px !important;
   line-height: 150% !important;
 }
 .faq-hero-search-button {
   position: absolute;
+  right: 14px;
+  top: 19%;
   border: none;
   background: transparent;
-  right: 14px;
-  top: 27%;
 }
 .faq-main {
   padding: 40px 0px 65px 0px;
@@ -1624,6 +1627,7 @@ form .input-group-text {
   padding: 23px 0;
   background: #FFFFFF;
   border: 1px solid #dedede;
+  border-top: none;
 }
 .account-header-mobile {
   display: flex;
@@ -1675,7 +1679,7 @@ form .input-group-text {
   border: 1px solid #DEDEDE;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  margin: 40px auto;
+  margin: 36px auto;
   background: #FFFFFF;
   max-width: 900px;
 }
@@ -1690,7 +1694,7 @@ form .input-group-text {
   }
 }
 .account-personal-card-title {
-  padding: 14px 0 14px 24px;
+  padding: 14px 24px 14px 24px;
   border-bottom: 1px solid #DEDEDE;
 }
 @media screen and (max-width: 575px) {
@@ -1699,7 +1703,7 @@ form .input-group-text {
   }
 }
 .account-personal-card-body {
-  padding: 24px 24px 49px 24px;
+  padding: 24px;
 }
 .account-mobile-title {
   display: flex;
@@ -1851,7 +1855,7 @@ form .input-group-text {
   border: 1px solid #DEDEDE;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  margin: 40px auto;
+  margin: 36px auto;
   background: #FFFFFF;
   max-width: 900px;
 }
@@ -1875,7 +1879,7 @@ form .input-group-text {
   }
 }
 .account-income-card-body {
-  padding: 24px 24px 49px 24px;
+  padding: 24px;
 }
 .account-income-review {
   margin-top: 40px;
@@ -2005,7 +2009,7 @@ form .input-group-text {
   border: 1px solid #DEDEDE;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  margin: 40px auto;
+  margin: 36px auto;
   background: #FFFFFF;
   max-width: 1200px;
 }
@@ -2251,4 +2255,24 @@ form .input-group-text {
   .bidding-details-value-card table td.bid-total {
     font-size: 18px;
   }
+}
+
+.edit-profile-header-body {
+  max-width: 900px;
+  margin: 40px auto;
+}
+.edit-profile-header-body h2 {
+  margin-bottom: 40px;
+}
+.edit-profile-header-body .profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #1F1F1F;
+}
+.edit-profile-header-body .profile-picture img {
+  border-radius: 50%;
+}
+.edit-profile-details {
+  padding-bottom: 140px;
 }/*# sourceMappingURL=theme.css.map */

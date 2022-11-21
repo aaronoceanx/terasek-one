@@ -133,7 +133,14 @@
         <h1 class="header-xl">
           Our Offerings
         </h1>
+        <form class="d-flex mt-5" role="search">
+          <div class="position-relative faq-hero-search">
+            <input class="form-control faq-hero-search-input" type="search" placeholder="Search a company" aria-label="Search">
+            <button class="faq-hero-search-button" type="submit"><img src="./assets/images/search.png" alt="search-icon"></button>
+          </div>
+        </form>
       </div>
+      
     </div>
   </section>
 
@@ -181,7 +188,10 @@
                   <label class="btn btn-outline-primary" for="filter-ipo">IPO</label>
                 
                   <input type="radio" class="btn-check" name="btnradioCategory" id="filter-ips" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="filter-ips">IPS</label>
+                  <label class="btn btn-outline-primary" for="filter-ips">Private Placement</label>
+
+                  <input type="radio" class="btn-check" name="btnradioCategory" id="filter-ips" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="filter-ips">Band</label>
                 </div>
               </div>
             </div>
@@ -201,6 +211,22 @@
                 </div>
               </div>
             </div>
+            <div class="mt-3">
+              <h5 class="header-xs">
+                Sector
+              </h5>
+            </div>
+            <div>
+              <div class="mt-3">
+                <div class="btn-group w-100" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradioMarket" id="filter-main" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="filter-main">Test1</label>
+                
+                  <input type="radio" class="btn-check" name="btnradioMarket" id="filter-ace" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="filter-ace">Test2</label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -213,12 +239,12 @@
         <div class="d-flex">
           <div class="dropdown me-3 d-lg-block d-none">
             <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              All state
+              Status
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Live</a></li>
+              <li><a class="dropdown-item" href="#">Upcoming</a></li>
+              <li><a class="dropdown-item" href="#">Closed</a></li>
             </ul>
           </div>
           <div class="dropdown me-3 d-lg-block d-none">
@@ -226,14 +252,24 @@
               Category
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">IPO</a></li>
+              <li><a class="dropdown-item" href="#">Prviate Placement</a></li>
+              <li><a class="dropdown-item" href="#">Bands</a></li>
             </ul>
           </div>
           <div class="dropdown me-3 d-lg-block d-none">
             <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              All Market
+             Market
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Main Market</a></li>
+              <li><a class="dropdown-item" href="#">Ace Market</a></li>
+              <li><a class="dropdown-item" href="#">Leap Market</a></li>
+            </ul>
+          </div>
+          <div class="dropdown me-3 d-lg-block d-none">
+            <button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Sector
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>

@@ -26,14 +26,14 @@
     padding: 30px 0;
 
     &-button{
-      padding: 0px 183px;
+      padding: 0px 180px;
 
       @media screen and (max-width: 991px){
-        padding: 0 120px;
+        padding: 0 148px;
       }
 
       @media screen and (max-width: 575px){
-        padding: 0 24px;
+        padding: 0 65px;
       }
     }
   }
